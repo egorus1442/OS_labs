@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <unistd.h>
 #include <string.h>
 
 #define MAX_LINE 1000
@@ -27,11 +29,11 @@ int main() {
     char line[MAX_LINE];
 
     // Чтение строк из stdin (перенаправленный pipe2)
-    while (fgets(line, MAX_LINE, stdin) != NULL) {
+    while (read(STDIN_FILENO, line, MAX_LINE) != 0) {
         // Удаление лишних пробелов
         remove_extra_spaces(line);
         // Вывод результата в stdout (будет прочитан родительским процессом)
-        printf("%s", line);
+        write(STDOUT_FILENO, line, strlen(line));
     }
 
     return 0;

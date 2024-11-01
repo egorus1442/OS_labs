@@ -63,8 +63,8 @@ int main() {
     char line[MAX_LINE];
     printf("Введите строки (Ctrl+D для завершения):\n");
 
-    // Чтение строк от пользователя и пересылка их в child1
-    while (fgets(line, MAX_LINE, stdin) != NULL) {
+    // Чтение строк от пользователя и переслка их в child1
+    while (fread(line, sizeof(char), MAX_LINE, stdin) != 0) {
         write(pipe1[1], line, strlen(line));
     }
 
@@ -74,7 +74,7 @@ int main() {
     wait(NULL);  // Ждем завершения child1
     wait(NULL);  // Ждем завершения child2
 
-    printf("Все процессы завершены.\n");
+    printf("\nВсе процессы завершены.\n");
 
     return 0;
 }
