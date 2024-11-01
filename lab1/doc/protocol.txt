@@ -1,0 +1,13 @@
+apple@MacBook-Pro-apple lab1 % ./parent                                   
+Введите строки (Ctrl+D для завершения):
+Sun  of  the  sleepless!  Melancholy  star!
+Whose  tearful  beam  glows  tremulously  far,
+That  show’st  the  darkness  thou  canst  not  dispel,
+How  like  art  thou  to  joy  remember’d  well!
+SUN OF  THE SLEEPLESS! MELANCHOLY STAR!
+WHOSE TEARFUL BEAM GLOWS TREMULOUSLY FAR,
+THAT SHOW’ST THE DARKNESS THOU CANST NOT DISPEL,
+HOW LIKE ART THOU TO  JOY REMEMBER’D WELL!
+Все процессы завершены.
+
+ 
