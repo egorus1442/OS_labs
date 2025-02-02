@@ -17,7 +17,7 @@ int main() {
         }
         
         // Отправка строки в pipe2 (stdout был перенаправлен)
-        write(STDOUT_FILENO, line, strlen(line));
+        write(STDOUT_FILENO, line, strlen(line)); // записываем в стандартный поток вывода строку line длины strlen(line)
     }
 
     return 0;

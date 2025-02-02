@@ -65,7 +65,7 @@ int main() {
 
     // Чтение строк от пользователя и переслка их в child1
     while (fread(line, sizeof(char), MAX_LINE, stdin) != 0) {
-        write(pipe1[1], line, strlen(line));
+        write(pipe1[1], line, strlen(line)); //записывает данные из line в канал pipe1
     }
 
     close(pipe1[1]);  // Закрываем конец записи pipe1 после ввода
