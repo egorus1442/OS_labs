@@ -6,13 +6,15 @@
 #include <sys/mman.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include <semaphore.h>
 
 #define MAX_LINE 1000
 
 typedef struct {
     char data[MAX_LINE];
-    int ready;
-    int done;
+    sem_t sem_data_ready;
+    sem_t sem_data_processed;
+    sem_t sem_done;
 } SharedData;
 
 int main(int argc, char *argv[]) {
@@ -43,19 +45,21 @@ int main(int argc, char *argv[]) {
     close(fd);  // Файловый дескриптор больше не нужен
 
     while (1) {
-        if (shared->done) {
-            break;  // Завершаем работу, если родительский процесс завершил ввод
+        // Ждем, пока данные будут готовы для обработки
+        sem_wait(&shared->sem_data_ready);
+
+        // Проверяем, завершена ли работа
+        if (sem_trywait(&shared->sem_done) == 0) {
+            break;
         }
 
-        if (shared->ready == 1) {
-            // Преобразуем строку в верхний регистр
-            for (int i = 0; shared->data[i]; i++) {
-                shared->data[i] = toupper(shared->data[i]);
-            }
-
-            shared->ready = 2;  // Помечаем данные как обработанные
+        // Преобразуем строку в верхний регистр
+        for (int i = 0; shared->data[i]; i++) {
+            shared->data[i] = toupper(shared->data[i]);
         }
-        usleep(1000);  // Спим 1 мс, чтобы не нагружать CPU
+
+        // Сигнализируем, что данные обработаны
+        sem_post(&shared->sem_data_processed);
     }
 
     // Освобождаем shared memory

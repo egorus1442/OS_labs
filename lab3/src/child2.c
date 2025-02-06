@@ -5,13 +5,15 @@
 #include <sys/mman.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include <semaphore.h>
 
 #define MAX_LINE 1000
 
 typedef struct {
     char data[MAX_LINE];
-    int ready;
-    int done;
+    sem_t sem_data_ready;
+    sem_t sem_data_processed;
+    sem_t sem_done;
 } SharedData;
 
 void remove_extra_spaces(char *str) {
@@ -61,17 +63,19 @@ int main(int argc, char *argv[]) {
     close(fd);  // Файловый дескриптор больше не нужен
 
     while (1) {
-        if (shared->done) {
-            break;  // Завершаем работу, если родительский процесс завершил ввод
+        // Ждем, пока данные будут готовы для обработки
+        sem_wait(&shared->sem_data_processed);
+
+        // Проверяем, завершена ли работа
+        if (sem_trywait(&shared->sem_done) == 0) {
+            break;
         }
 
-        if (shared->ready == 2) {
-            // Удаляем лишние пробелы
-            remove_extra_spaces(shared->data);
+        // Удаляем лишние пробелы
+        remove_extra_spaces(shared->data);
 
-            shared->ready = 0;  // Помечаем данные как обработанные
-        }
-        usleep(1000);  // Спим 1 мс, чтобы не нагружать CPU
+        // Сигнализируем, что данные обработаны
+        sem_post(&shared->sem_data_processed);
     }
 
     // Освобождаем shared memory
