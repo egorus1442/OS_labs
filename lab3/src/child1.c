@@ -15,6 +15,7 @@ typedef struct {
     sem_t sem_data_ready;
     sem_t sem_data_processed;
     sem_t sem_done;
+    sem_t sem_child1_done;
 } SharedData;
 
 int main(int argc, char *argv[]) {
@@ -45,13 +46,13 @@ int main(int argc, char *argv[]) {
     close(fd);  // Файловый дескриптор больше не нужен
 
     while (1) {
-        // Ждем, пока данные будут готовы для обработки
-        sem_wait(&shared->sem_data_ready);
-
         // Проверяем, завершена ли работа
         if (sem_trywait(&shared->sem_done) == 0) {
             break;
         }
+
+        // Ждем, пока данные будут готовы для обработки
+        sem_wait(&shared->sem_data_ready);
 
         // Преобразуем строку в верхний регистр
         for (int i = 0; shared->data[i]; i++) {
@@ -61,6 +62,9 @@ int main(int argc, char *argv[]) {
         // Сигнализируем, что данные обработаны
         sem_post(&shared->sem_data_processed);
     }
+
+    // Сигнализируем родительскому процессу о завершении
+    sem_post(&shared->sem_child1_done);
 
     // Освобождаем shared memory
     munmap(shared, sizeof(SharedData));

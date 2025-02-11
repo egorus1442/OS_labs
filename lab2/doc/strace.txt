@@ -1,0 +1,71 @@
+execve("./timsort2", ["./timsort2", "3"], 0xfffff3d44008 /* 9 vars */) = 0
+brk(NULL)                               = 0xaaaafda59000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb29d3000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8467, ...}) = 0
+mmap(NULL, 8467, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffb29d0000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\206\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1722920, ...}) = 0
+mmap(NULL, 1892240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_DENYWRITE, -1, 0) = 0xffffb27cc000
+mmap(0xffffb27d0000, 1826704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffb27d0000
+munmap(0xffffb27cc000, 16384)           = 0
+munmap(0xffffb298e000, 49040)           = 0
+mprotect(0xffffb296a000, 77824, PROT_NONE) = 0
+mmap(0xffffb297d000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0xffffb297d000
+mmap(0xffffb2982000, 49040, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffb2982000
+close(3)                                = 0
+set_tid_address(0xffffb29d3fb0)         = 1495
+set_robust_list(0xffffb29d3fc0, 24)     = 0
+rseq(0xffffb29d4600, 0x20, 0, 0xd428bc00) = 0
+mprotect(0xffffb297d000, 12288, PROT_READ) = 0
+mprotect(0xaaaacbb4f000, 4096, PROT_READ) = 0
+mprotect(0xffffb29d8000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0xffffb29d0000, 8467)            = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+getrandom("\x05\xe8\xac\x89\x05\x92\xc1\x07", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xaaaafda59000
+brk(0xaaaafda7a000)                     = 0xaaaafda7a000
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(1, "Enter the number of elements in "..., 43Enter the number of elements in the array: ) = 43
+read(0, 100000
+"100000\n", 1024)               = 7
+mmap(NULL, 401408, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb276e000
+rt_sigaction(SIGRT_1, {sa_handler=0xffffb2852840, sa_mask=[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xffffb1e00000
+mprotect(0xffffb1e10000, 8388608, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xffffb260f270, parent_tid=0xffffb260f270, exit_signal=0, stack=0xffffb1e00000, stack_size=0x80ea60, tls=0xffffb260f8e0} => {parent_tid=[1496]}, 88) = 1496
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xffffb1400000
+mprotect(0xffffb1410000, 8388608, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xffffb1c0f270, parent_tid=0xffffb1c0f270, exit_signal=0, stack=0xffffb1400000, stack_size=0x80ea60, tls=0xffffb1c0f8e0} => {parent_tid=[1497]}, 88) = 1497
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xffffb0a00000
+mprotect(0xffffb0a10000, 8388608, PROT_READ|PROT_WRITE) = 0
+rt_sigprocmask(SIG_BLOCK, ~[], [], 8)   = 0
+clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xffffb120f270, parent_tid=0xffffb120f270, exit_signal=0, stack=0xffffb0a00000, stack_size=0x80ea60, tls=0xffffb120f8e0} => {parent_tid=[1498]}, 88) = 1498
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+futex(0xffffb260f270, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 1496, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0xffffb1c0f270, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 1497, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+futex(0xffffb120f270, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 1498, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb270f000
+mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb26ee000
+munmap(0xffffb270f000, 135168)          = 0
+munmap(0xffffb26ee000, 135168)          = 0
+mmap(NULL, 270336, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffb26ee000
+brk(0xaaaafda9b000)                     = 0xaaaafda9b000
+munmap(0xffffb26ee000, 270336)          = 0
+write(1, "Time taken for sorting: 0.019089"..., 41Time taken for sorting: 0.019089 seconds
+) = 41
+write(1, "Number of threads used: 3\n", 26Number of threads used: 3
+) = 26
+munmap(0xffffb276e000, 401408)          = 0
+lseek(0, -1, SEEK_CUR)                  = -1 ESPIPE (Illegal seek)
+exit_group(0)                           = ?
++++ exited with 0 +++

@@ -9,12 +9,14 @@
 #define MIN_MERGE 32
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
+// структура передачи данных в поток
 typedef struct {
     int *array;
     int left;
     int right;
 } ThreadData;
 
+// сортировка вставками
 void insertionSort(int arr[], int left, int right) {
     for (int i = left + 1; i <= right; i++) {
         int temp = arr[i];
@@ -27,6 +29,7 @@ void insertionSort(int arr[], int left, int right) {
     }
 }
 
+//слияние двух отсортированных подмассивов
 void merge(int arr[], int l, int m, int r) {
     int len1 = m - l + 1, len2 = r - m;
     int *left = (int *)malloc(len1 * sizeof(int));
@@ -55,6 +58,7 @@ void merge(int arr[], int l, int m, int r) {
     free(right);
 }
 
+//сортировка timsort, выполняемая в потоке
 void *timSortThread(void *arg) {
     ThreadData *data = (ThreadData *)arg;
     int *arr = data->array;
@@ -80,6 +84,7 @@ void *timSortThread(void *arg) {
     pthread_exit(NULL);
 }
 
+//основная ф-я timsort
 void timSort(int arr[], int n, int maxThreads) {
     if (n < 2) return;
 
@@ -124,7 +129,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int maxThreads = atoi(argv[1]);
+    int maxThreads = atoi(argv[1]); // Преобразование аргумента в число (количество потоков)
     int arraySize;
 
     printf("Enter the number of elements in the array: ");

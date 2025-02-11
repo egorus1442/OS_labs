@@ -16,6 +16,8 @@ typedef struct {
     sem_t sem_data_ready;      // Семафор: данные готовы для обработки
     sem_t sem_data_processed;  // Семафор: данные обработаны
     sem_t sem_done;            // Семафор: работа завершена
+    sem_t sem_child1_done;     // Семафор: child1 завершил работу
+    sem_t sem_child2_done;     // Семафор: child2 завершил работу
 } SharedData;
 
 int main() {
@@ -51,6 +53,8 @@ int main() {
     sem_init(&shared->sem_data_ready, 1, 0);      // Изначально данные не готовы
     sem_init(&shared->sem_data_processed, 1, 0);  // Изначально данные не обработаны
     sem_init(&shared->sem_done, 1, 0);            // Изначально работа не завершена
+    sem_init(&shared->sem_child1_done, 1, 0);     // Изначально child1 не завершил работу
+    sem_init(&shared->sem_child2_done, 1, 0);     // Изначально child2 не завершил работу
 
     // Создаем первый дочерний процесс
     if ((child1 = fork()) == -1) {
@@ -98,13 +102,15 @@ int main() {
     sem_post(&shared->sem_done);
 
     // Ожидание завершения дочерних процессов
-    wait(NULL);  // Ждем завершения child1
-    wait(NULL);  // Ждем завершения child2
+    sem_wait(&shared->sem_child1_done);  // Ждем завершения child1
+    sem_wait(&shared->sem_child2_done);  // Ждем завершения child2
 
     // Уничтожение семафоров
     sem_destroy(&shared->sem_data_ready);
     sem_destroy(&shared->sem_data_processed);
     sem_destroy(&shared->sem_done);
+    sem_destroy(&shared->sem_child1_done);
+    sem_destroy(&shared->sem_child2_done);
 
     // Освобождаем shared memory
     munmap(shared, sizeof(SharedData));
