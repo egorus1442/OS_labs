@@ -3,13 +3,17 @@
 
 ## Сборка лабы:
 ```
-gcc timsort2.c -o parent
+gcc timsort2.c -o timsort2
 
 ```
 
 ## Запуск
 ```
 ./timsort2[количество потоков]
+```
+## Просмотр количества потоков
+```
+top -l 1 -s 0 | grep timsort2
 ```
 
 ## Краткая теория:

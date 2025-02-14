@@ -7,18 +7,9 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <semaphore.h>
+#include "common.h"
 
-#define MAX_LINE 1000
 #define SHARED_FILE "shared_memory.bin"
-
-typedef struct {
-    char data[MAX_LINE];
-    sem_t sem_data_ready;      // Семафор: данные готовы для обработки
-    sem_t sem_data_processed;  // Семафор: данные обработаны
-    sem_t sem_done;            // Семафор: работа завершена
-    sem_t sem_child1_done;     // Семафор: child1 завершил работу
-    sem_t sem_child2_done;     // Семафор: child2 завершил работу
-} SharedData;
 
 int main() {
     int fd;
@@ -51,11 +42,9 @@ int main() {
 
     // Инициализация семафоров
     sem_init(&shared->sem_data_ready, 1, 0);      // Изначально данные не готовы
-    sem_init(&shared->sem_data_processed, 1, 0);  // Изначально данные не обработаны
-    sem_init(&shared->sem_done, 1, 0);            // Изначально работа не завершена
-    sem_init(&shared->sem_child1_done, 1, 0);     // Изначально child1 не завершил работу
-    sem_init(&shared->sem_child2_done, 1, 0);     // Изначально child2 не завершил работу
-
+    sem_init(&shared->sem_data_processed_by_1, 1, 0);  // Изначально данные не обработаны
+    sem_init(&shared->sem_data_processed_by_2, 1, 0);  // Изначально данные не обработаны
+    
     // Создаем первый дочерний процесс
     if ((child1 = fork()) == -1) {
         perror("Ошибка создания первого дочернего процесса");
@@ -88,29 +77,39 @@ int main() {
     printf("Введите строки (Ctrl+D для завершения):\n");
 
     while (fgets(shared->data, MAX_LINE, stdin) != NULL) {
-        // Сигнализируем, что данные готовы для обработки
-        sem_post(&shared->sem_data_ready);
-
-        // Ждем, пока данные будут обработаны
-        sem_wait(&shared->sem_data_processed);
+        // Проверяем что не отправляем пустую строку
+        if (shared->data[0] != '\0') {
+            // Сигнализируем, что данные готовы для обработки
+            sem_post(&shared->sem_data_ready);
+    
+            // Ждем, пока данные будут обработаны
+            sem_wait(&shared->sem_data_processed_by_2);
+        }
 
         // Выводим результат
         printf("Результат: %s\n", shared->data);
     }
-
-    // Сигнализируем дочерним процессам о завершении
-    sem_post(&shared->sem_done);
+    
+    // Сигнализируем дочерним процессам о завершении (отправляем пустую строку)
+    shared->data[0] = '\0';
+    sem_post(&shared->sem_data_ready);
+    sem_wait(&shared->sem_data_processed_by_2);
 
     // Ожидание завершения дочерних процессов
-    sem_wait(&shared->sem_child1_done);  // Ждем завершения child1
-    sem_wait(&shared->sem_child2_done);  // Ждем завершения child2
+    int status;
+    waitpid(child1, &status, 0); // Ждем завершения child1
+    if (WIFEXITED(status) && WEXITSTATUS(status) != 0) {
+        printf("Дочерний процесс 1 завершился с ошибкой: %i", WEXITSTATUS(status));
+    }
+    waitpid(child2, &status, 0); // Ждем завершения child2
+    if (WIFEXITED(status) && WEXITSTATUS(status) != 0) {
+        printf("Дочерний процесс 2 завершился с ошибкой: %i", WEXITSTATUS(status));
+    }
 
     // Уничтожение семафоров
     sem_destroy(&shared->sem_data_ready);
-    sem_destroy(&shared->sem_data_processed);
-    sem_destroy(&shared->sem_done);
-    sem_destroy(&shared->sem_child1_done);
-    sem_destroy(&shared->sem_child2_done);
+    sem_destroy(&shared->sem_data_processed_by_1);
+    sem_destroy(&shared->sem_data_processed_by_2);
 
     // Освобождаем shared memory
     munmap(shared, sizeof(SharedData));

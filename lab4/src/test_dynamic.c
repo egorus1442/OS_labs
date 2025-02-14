@@ -2,35 +2,44 @@
 #include <stdlib.h>
 #include <dlfcn.h>
 
-int main() {
-    void *prime_handle = dlopen("./libprime.so", RTLD_LAZY);
-    void *pi_handle = dlopen("./libpi.so", RTLD_LAZY);
+typedef int (*tCalculatePrime)(int, int);
+typedef float (*tCalculatePi)(int);
 
-    if (!prime_handle || !pi_handle) {
+typedef struct {
+    tCalculatePi calculatePi;
+    tCalculatePrime calculatePrime;
+    void* library;
+} tFuncLibrary;
+
+tFuncLibrary load_library(char* filename) {
+    // Загрузка библиотеки
+    tFuncLibrary result;
+    result.library = dlopen(filename, RTLD_LAZY); // RTLD_LAZY - отложенная загрузка
+    if (!result.library) {
         fprintf(stderr, "Ошибка загрузки библиотек: %s\n", dlerror());
-        return 1;
+        return result;
     }
 
     // Загрузка функций
-    int (*PrimeCountNaive)(int, int) = dlsym(prime_handle, "PrimeCountNaive");
-    int (*PrimeCountEratosthenes)(int, int) = dlsym(prime_handle, "PrimeCountEratosthenes");
-    float (*PiLeibniz)(int) = dlsym(pi_handle, "PiLeibniz");
-    float (*PiWallis)(int) = dlsym(pi_handle, "PiWallis");
+    result.calculatePrime = dlsym(result.library, "CalculatePrime");
+    result.calculatePi = dlsym(result.library, "CalculatePi");
 
-    if (!PrimeCountNaive || !PrimeCountEratosthenes || !PiLeibniz || !PiWallis) {
-        fprintf(stderr, "Ошибка загрузки функций: %s\n", dlerror());
-        dlclose(prime_handle);
-        dlclose(pi_handle);
-        return 1;
+    if (!result.calculatePrime || !result.calculatePi) { //не возвращают ли NULL
+        fprintf(stderr, "Ошибка загрузки функций из библиотеки: %s\n", dlerror());
+        dlclose(result.library);
+        result.library = NULL;
+        return result;
     }
 
-    // Текущие реализации
-    int (*CurrentPrimeCount)(int, int) = PrimeCountNaive;
-    float (*CurrentPi)(int) = PiLeibniz;
+    return result;
+}
 
-    // Переменные для хранения текущей версии
-    int prime_version = 1; // 1 - наивный, 2 - решето Эратосфена
-    int pi_version = 1;    // 1 - Лейбниц, 2 - Валлис
+int main() {
+    tFuncLibrary funcLib = load_library("./libImpl1.so");
+    if (funcLib.library == NULL) {
+        return 1;
+    }
+    int lib_index = 0;
 
     int command;
     while (1) {
@@ -44,34 +53,32 @@ int main() {
         if (command == -1) {
             break;
         } else if (command == 0) {
-            // Переключение реализаций
-            prime_version = (prime_version == 1) ? 2 : 1;
-            pi_version = (pi_version == 1) ? 2 : 1;
-
-            CurrentPrimeCount = (prime_version == 1) ? PrimeCountNaive : PrimeCountEratosthenes;
-            CurrentPi = (pi_version == 1) ? PiLeibniz : PiWallis;
+            dlclose(funcLib.library);
+            lib_index = lib_index == 0 ? 1 : 0;
+            funcLib = load_library(lib_index == 0 ? "./libImpl1.so" : "./libImpl2.so");
+            if (funcLib.library == NULL) {
+                continue;
+            }
 
             printf("Library switched successfully!\n");
-            printf("Current PrimeCount implementation: %s\n", (prime_version == 1) ? "Naive" : "Eratosthenes");
-            printf("Current Pi implementation: %s\n", (pi_version == 1) ? "Leibniz" : "Wallis");
+            printf("Current lib: %s\n", lib_index == 0 ? "./libImpl1.so" : "./libImpl2.so");
         } else if (command == 1) {
             int A, B;
             printf("Enter A and B: ");
             scanf("%d %d", &A, &B);
-            printf("PrimeCount(%d, %d) = %d\n", A, B, CurrentPrimeCount(A, B));
-            printf("Implementation used: %s\n", (prime_version == 1) ? "Naive" : "Eratosthenes");
+            printf("PrimeCount(%d, %d) = %d\n", A, B, funcLib.calculatePrime(A, B));
+            printf("Implementation used: %s\n", lib_index == 0 ? "./libImpl1.so" : "./libImpl2.so");
         } else if (command == 2) {
             int K;
             printf("Enter K: ");
             scanf("%d", &K);
-            printf("Pi(%d) = %f\n", K, CurrentPi(K));
-            printf("Implementation used: %s\n", (pi_version == 1) ? "Leibniz" : "Wallis");
+            printf("Pi(%d) = %f\n", K, funcLib.calculatePi(K));
+            printf("Implementation used: %s\n", lib_index == 0 ? "./libImpl1.so" : "./libImpl2.so");
         } else {
             printf("Invalid command\n");
         }
     }
 
-    dlclose(prime_handle);
-    dlclose(pi_handle);
+    dlclose(funcLib.library);
     return 0;
 }

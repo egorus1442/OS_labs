@@ -129,7 +129,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int maxThreads = atoi(argv[1]); // Преобразование аргумента в число (количество потоков)
+    int maxThreads = atoi(argv[1]);
     int arraySize;
 
     printf("Enter the number of elements in the array: ");

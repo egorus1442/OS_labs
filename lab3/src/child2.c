@@ -6,16 +6,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <semaphore.h>
-
-#define MAX_LINE 1000
-
-typedef struct {
-    char data[MAX_LINE];
-    sem_t sem_data_ready;
-    sem_t sem_data_processed;
-    sem_t sem_done;
-    sem_t sem_child2_done;
-} SharedData;
+#include "common.h"
 
 void remove_extra_spaces(char *str) {
     int i = 0, j = 0;
@@ -64,23 +55,21 @@ int main(int argc, char *argv[]) {
     close(fd);  // Файловый дескриптор больше не нужен
 
     while (1) {
+        // Ждем, пока данные будут готовы для обработки
+        sem_wait(&shared->sem_data_processed_by_1);
+
         // Проверяем, завершена ли работа
-        if (sem_trywait(&shared->sem_done) == 0) {
+        if (shared->data[0] == '\0') {
+            sem_post(&shared->sem_data_processed_by_2);
             break;
         }
-
-        // Ждем, пока данные будут готовы для обработки
-        sem_wait(&shared->sem_data_processed);
 
         // Удаляем лишние пробелы
         remove_extra_spaces(shared->data);
 
         // Сигнализируем, что данные обработаны
-        sem_post(&shared->sem_data_processed);
+        sem_post(&shared->sem_data_processed_by_2);
     }
-
-    // Сигнализируем родительскому процессу о завершении
-    sem_post(&shared->sem_child2_done);
 
     // Освобождаем shared memory
     munmap(shared, sizeof(SharedData));
