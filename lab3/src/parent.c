@@ -97,8 +97,8 @@ int main() {
 
     // Ожидание завершения дочерних процессов
     int status;
-    waitpid(child1, &status, 0); // Ждем завершения child1
-    if (WIFEXITED(status) && WEXITSTATUS(status) != 0) {
+    waitpid(child1, &status, 0); // Блокируется до завершения child1
+    if (WIFEXITED(status) && WEXITSTATUS(status) != 0) { //завершен через exit() или main() / код завершения доч проц
         printf("Дочерний процесс 1 завершился с ошибкой: %i", WEXITSTATUS(status));
     }
     waitpid(child2, &status, 0); // Ждем завершения child2
