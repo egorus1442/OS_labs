@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/apple/Desktop/учеба/2 курс /Лабы ОС/ОС Лабы/КП/src",
+      "program": "/Users/apple/Desktop/учеба/2 курс /Лабы ОС/ОС Лабы/КП/src/build/Debug/outDebug"
+    }
+  ]
+}
