@@ -1,0 +1,1522 @@
+execve("./main", ["./main"], 0xfffffb2ebff8 /* 30 vars */) = 0
+brk(NULL)                               = 0xaaaada641000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84b46000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=13859, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 13859, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff84b42000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libzmq.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0000\213\1\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=569160, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 698216, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84a66000
+mmap(0xffff84a70000, 632680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84a70000
+munmap(0xffff84a66000, 40960)           = 0
+munmap(0xffff84b0b000, 22376)           = 0
+mprotect(0xffff84af3000, 61440, PROT_NONE) = 0
+mmap(0xffff84b02000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x82000) = 0xffff84b02000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1637400, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1805928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff848b7000
+mmap(0xffff848c0000, 1740392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff848c0000
+munmap(0xffff848b7000, 36864)           = 0
+munmap(0xffff84a69000, 28264)           = 0
+mprotect(0xffff84a48000, 61440, PROT_NONE) = 0
+mmap(0xffff84a57000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0xffff84a57000
+mmap(0xffff84a5d000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff84a5d000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libbsd.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=80696, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 213024, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8488b000
+mmap(0xffff84890000, 147488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84890000
+munmap(0xffff8488b000, 20480)           = 0
+munmap(0xffff848b5000, 40992)           = 0
+mprotect(0xffff848a2000, 65536, PROT_NONE) = 0
+mmap(0xffff848b2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0xffff848b2000
+mmap(0xffff848b4000, 32, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff848b4000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libsodium.so.23", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=227504, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 356856, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84838000
+mmap(0xffff84840000, 291320, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84840000
+munmap(0xffff84838000, 32768)           = 0
+munmap(0xffff84888000, 29176)           = 0
+mprotect(0xffff84877000, 61440, PROT_NONE) = 0
+mmap(0xffff84886000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x36000) = 0xffff84886000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libpgm-5.3.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\260:\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=305904, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 452544, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff847d1000
+mmap(0xffff847e0000, 387008, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff847e0000
+munmap(0xffff847d1000, 61440)           = 0
+munmap(0xffff8483f000, 1984)            = 0
+mprotect(0xffff8482a000, 61440, PROT_NONE) = 0
+mmap(0xffff84839000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x49000) = 0xffff84839000
+mmap(0xffff8483b000, 14272, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8483b000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libnorm.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0000\242\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=468928, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84b40000
+mmap(NULL, 1321304, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8469d000
+mmap(0xffff846a0000, 1255768, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff846a0000
+munmap(0xffff8469d000, 12288)           = 0
+munmap(0xffff847d3000, 51544)           = 0
+mprotect(0xffff8470f000, 65536, PROT_NONE) = 0
+mmap(0xffff8471f000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6f000) = 0xffff8471f000
+mmap(0xffff84723000, 719192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff84723000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgssapi_krb5.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=313784, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 443248, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84633000
+mmap(0xffff84640000, 377712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84640000
+munmap(0xffff84633000, 53248)           = 0
+munmap(0xffff8469d000, 9072)            = 0
+mprotect(0xffff8468a000, 61440, PROT_NONE) = 0
+mmap(0xffff84699000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x49000) = 0xffff84699000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2190752, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 2332704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84400000
+mmap(0xffff84400000, 2267168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84400000
+munmap(0xffff8462a000, 63520)           = 0
+mprotect(0xffff8460a000, 61440, PROT_NONE) = 0
+mmap(0xffff84619000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x209000) = 0xffff84619000
+mmap(0xffff84627000, 10272, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff84627000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=84296, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 213704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff843cb000
+mmap(0xffff843d0000, 148168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff843d0000
+munmap(0xffff843cb000, 20480)           = 0
+munmap(0xffff843f5000, 41672)           = 0
+mprotect(0xffff843e4000, 61440, PROT_NONE) = 0
+mmap(0xffff843f3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0xffff843f3000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libmd.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=43128, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 172240, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff843a5000
+mmap(0xffff843b0000, 106704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff843b0000
+munmap(0xffff843a5000, 45056)           = 0
+munmap(0xffff843cb000, 16592)           = 0
+mprotect(0xffff843ba000, 61440, PROT_NONE) = 0
+mmap(0xffff843c9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0xffff843c9000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=13752, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84b3e000
+mmap(NULL, 135200, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8438e000
+mmap(0xffff84390000, 69664, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84390000
+munmap(0xffff8438e000, 8192)            = 0
+munmap(0xffff843a2000, 53280)           = 0
+mprotect(0xffff84391000, 61440, PROT_NONE) = 0
+mmap(0xffff843a0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff843a0000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=551064, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 680048, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff842e9000
+mmap(0xffff842f0000, 614512, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff842f0000
+munmap(0xffff842e9000, 28672)           = 0
+munmap(0xffff84387000, 32880)           = 0
+mprotect(0xffff84376000, 61440, PROT_NONE) = 0
+mmap(0xffff84385000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x85000) = 0xffff84385000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libkrb5.so.3", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=794432, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 924128, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8420e000
+mmap(0xffff84210000, 858592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84210000
+munmap(0xffff8420e000, 8192)            = 0
+munmap(0xffff842e2000, 55776)           = 0
+mprotect(0xffff842c6000, 61440, PROT_NONE) = 0
+mmap(0xffff842d5000, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb5000) = 0xffff842d5000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libk5crypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=174424, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 307184, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff841c5000
+mmap(0xffff841d0000, 241648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff841d0000
+munmap(0xffff841c5000, 45056)           = 0
+munmap(0xffff8420b000, 20464)           = 0
+mprotect(0xffff841f9000, 65536, PROT_NONE) = 0
+mmap(0xffff84209000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x29000) = 0xffff84209000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libcom_err.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=14184, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 143432, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff841ac000
+mmap(0xffff841b0000, 77896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff841b0000
+munmap(0xffff841ac000, 16384)           = 0
+munmap(0xffff841c4000, 45128)           = 0
+mprotect(0xffff841b3000, 61440, PROT_NONE) = 0
+mmap(0xffff841c2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0xffff841c2000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libkrb5support.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47712, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84b3c000
+mmap(NULL, 177016, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84184000
+mmap(0xffff84190000, 111480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84190000
+munmap(0xffff84184000, 49152)           = 0
+munmap(0xffff841ac000, 13176)           = 0
+mprotect(0xffff8419b000, 61440, PROT_NONE) = 0
+mmap(0xffff841aa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0xffff841aa000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libkeyutils.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18280, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 147472, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8416b000
+mmap(0xffff84170000, 81936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84170000
+munmap(0xffff8416b000, 20480)           = 0
+munmap(0xffff84185000, 40976)           = 0
+mprotect(0xffff84174000, 61440, PROT_NONE) = 0
+mmap(0xffff84183000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0xffff84183000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=60104, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 199104, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff8413f000
+mmap(0xffff84140000, 133568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffff84140000
+munmap(0xffff8413f000, 4096)            = 0
+munmap(0xffff84161000, 59840)           = 0
+mprotect(0xffff8414d000, 65536, PROT_NONE) = 0
+mmap(0xffff8415d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0xffff8415d000
+mmap(0xffff8415f000, 6592, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff8415f000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84b0f000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84b0c000
+set_tid_address(0xffff84b0c0f0)         = 5151
+set_robust_list(0xffff84b0c100, 24)     = 0
+rseq(0xffff84b0c7c0, 0x20, 0, 0xd428bc00) = 0
+mprotect(0xffff84a57000, 16384, PROT_READ) = 0
+mprotect(0xffff8415d000, 4096, PROT_READ) = 0
+mprotect(0xffff84183000, 4096, PROT_READ) = 0
+mprotect(0xffff841aa000, 4096, PROT_READ) = 0
+mprotect(0xffff841c2000, 4096, PROT_READ) = 0
+mprotect(0xffff84209000, 4096, PROT_READ) = 0
+mprotect(0xffff842d5000, 45056, PROT_READ) = 0
+mprotect(0xffff84385000, 4096, PROT_READ) = 0
+mprotect(0xffff843a0000, 4096, PROT_READ) = 0
+mprotect(0xffff843c9000, 4096, PROT_READ) = 0
+mprotect(0xffff843f3000, 4096, PROT_READ) = 0
+mprotect(0xffff84619000, 45056, PROT_READ) = 0
+mprotect(0xffff84699000, 8192, PROT_READ) = 0
+mprotect(0xffff8471f000, 12288, PROT_READ) = 0
+mprotect(0xffff84839000, 4096, PROT_READ) = 0
+mprotect(0xffff84886000, 4096, PROT_READ) = 0
+mprotect(0xffff848b2000, 4096, PROT_READ) = 0
+mprotect(0xffff84b02000, 32768, PROT_READ) = 0
+mprotect(0xaaaad7fe2000, 4096, PROT_READ) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffff84a6e000
+mprotect(0xffff84b4b000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0xffff84b42000, 13859)           = 0
+getrandom("\xff\x17\x77\xd7\x31\x43\x4c\x95", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xaaaada641000
+brk(0xaaaada662000)                     = 0xaaaada662000
+openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+read(3, "0-9\n", 1024)                  = 4
+close(3)                                = 0
+openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0xaaaada652ee0 /* 22 entries */, 32768) = 616
+getdents64(3, 0xaaaada652ee0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+getpid()                                = 5151
+sched_getaffinity(5151, 128, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) = 8
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=494, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 494
+read(3, "", 4096)                       = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=494, ...}, AT_EMPTY_PATH) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=13859, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 13859, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff84b42000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/tls/aarch64/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64-linux-gnu/tls/aarch64/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/tls/aarch64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64-linux-gnu/tls/aarch64", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/tls/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64-linux-gnu/tls/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64-linux-gnu/tls", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/aarch64/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64-linux-gnu/aarch64/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/aarch64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64-linux-gnu/aarch64", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64-linux-gnu/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/tls/aarch64/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/tls/aarch64/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/tls/aarch64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/tls/aarch64", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/tls/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/tls/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/tls", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/aarch64/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/aarch64/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/aarch64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/aarch64", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/lib/tls/aarch64/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/tls/aarch64/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/tls/aarch64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/tls/aarch64", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/tls/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/tls/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/tls", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/aarch64", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/lib/tls/aarch64/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/tls/aarch64/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/tls/aarch64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/tls/aarch64", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/tls/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/tls/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/tls", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/aarch64", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/atomics/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib/atomics", 0xffffe4f64800, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+munmap(0xffff84b42000, 13859)           = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=13859, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 13859, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffff84b42000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libnss_db-2.35.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/libnss_db-2.35.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/libnss_db-2.35.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/libnss_db-2.35.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+munmap(0xffff84b42000, 13859)           = 0
+openat(AT_FDCWD, "/etc/protocols", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2932, ...}, AT_EMPTY_PATH) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "# Internet (IP) protocols\n#\n# Up"..., 4096) = 2932
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+eventfd2(0, EFD_CLOEXEC)                = 3
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+fcntl(3, F_GETFL)                       = 0x802 (flags O_RDWR|O_NONBLOCK)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+getpid()                                = 5151
+getpid()                                = 5151
+getrandom("\x6b\x6c\x81\x50\xee\x2f\x9a\x92\x82\xd8\x8e\x27\x74\x37\x31\x44", 16, 0) = 16
+getrandom("\x3e\x9b\xea\x61\x52\x81\xba\x2b\x97\xc0\xc9\x0e\xcf\xe4\xc0\xcd", 16, 0) = 16
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+write(1, "Controller Node started. Listeni"..., 64) = 64
+pselect6(1, [0], NULL, NULL, {tv_sec=0, tv_nsec=0}, NULL) = 1 (in [0], left {tv_sec=0, tv_nsec=0})
+newfstatat(0, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+read(0, "create 1\nping 1\nexec 1 3 5 7 9\nc"..., 4096) = 69
+write(1, "Received command: create 1\n", 27) = 27
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffff84b0c0f0) = 5153
+strace: Process 5153 attached
+[pid  5151] clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+[pid  5153] set_robust_list(0xffff84b0c100, 24) = 0
+[pid  5153] eventfd2(0, EFD_CLOEXEC)    = 4
+[pid  5153] fcntl(4, F_GETFL)           = 0x2 (flags O_RDWR)
+[pid  5153] fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+[pid  5153] fcntl(4, F_GETFL)           = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5153] fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+[pid  5153] getpid()                    = 5153
+[pid  5153] getpid()                    = 5153
+[pid  5153] eventfd2(0, EFD_CLOEXEC)    = 5
+[pid  5153] fcntl(5, F_GETFL)           = 0x2 (flags O_RDWR)
+[pid  5153] fcntl(5, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+[pid  5153] fcntl(5, F_GETFL)           = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5153] fcntl(5, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+[pid  5153] getpid()                    = 5153
+[pid  5153] epoll_create1(EPOLL_CLOEXEC) = 6
+[pid  5153] epoll_ctl(6, EPOLL_CTL_ADD, 5, {events=0, data={u32=3664091408, u64=187650785253648}}) = 0
+[pid  5153] epoll_ctl(6, EPOLL_CTL_MOD, 5, {events=EPOLLIN, data={u32=3664091408, u64=187650785253648}}) = 0
+[pid  5153] getpid()                    = 5153
+[pid  5153] rt_sigaction(SIGRT_1, {sa_handler=0xffff8493a700, sa_mask=[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+[pid  5153] rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+[pid  5153] mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xffff83800000
+[pid  5153] mprotect(0xffff83810000, 8388608, PROT_READ|PROT_WRITE) = 0
+[pid  5153] rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+[pid  5153] clone(child_stack=0xffff8400e6e0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTIDstrace: Process 5154 attached
+ <unfinished ...>
+[pid  5154] rseq(0xffff8400f640, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid  5153] <... clone resumed>, parent_tid=[5154], tls=0xffff8400f660, child_tidptr=0xffff8400ef70) = 5154
+[pid  5154] <... rseq resumed>)         = 0
+[pid  5153] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5154] set_robust_list(0xffff8400ef80, 24 <unfinished ...>
+[pid  5153] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5154] <... set_robust_list resumed>) = 0
+[pid  5153] eventfd2(0, EFD_CLOEXEC <unfinished ...>
+[pid  5154] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5153] <... eventfd2 resumed>)     = 7
+[pid  5154] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5153] fcntl(7, F_GETFL <unfinished ...>
+[pid  5154] rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+[pid  5153] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5154] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5153] fcntl(7, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5154] sched_getparam(5154,  <unfinished ...>
+[pid  5153] <... fcntl resumed>)        = 0
+[pid  5154] <... sched_getparam resumed>[0]) = 0
+[pid  5153] fcntl(7, F_GETFL <unfinished ...>
+[pid  5154] sched_getscheduler(5154 <unfinished ...>
+[pid  5153] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5154] <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+[pid  5153] fcntl(7, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5154] sched_setscheduler(5154, SCHED_OTHER, [0] <unfinished ...>
+[pid  5153] <... fcntl resumed>)        = 0
+[pid  5154] <... sched_setscheduler resumed>) = 0
+[pid  5153] getpid( <unfinished ...>
+[pid  5154] prctl(PR_SET_NAME, "ZMQbg/Reaper" <unfinished ...>
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5154] <... prctl resumed>)        = 0
+[pid  5153] epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+[pid  5154] epoll_pwait(6,  <unfinished ...>
+[pid  5153] <... epoll_create1 resumed>) = 8
+[pid  5153] epoll_ctl(8, EPOLL_CTL_ADD, 7, {events=0, data={u32=3664093488, u64=187650785255728}}) = 0
+[pid  5153] epoll_ctl(8, EPOLL_CTL_MOD, 7, {events=EPOLLIN, data={u32=3664093488, u64=187650785255728}}) = 0
+[pid  5153] mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xffff82e00000
+[pid  5153] mprotect(0xffff82e10000, 8388608, PROT_READ|PROT_WRITE) = 0
+[pid  5153] rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+[pid  5153] clone(child_stack=0xffff8360e6e0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTIDstrace: Process 5155 attached
+ <unfinished ...>
+[pid  5155] rseq(0xffff8360f640, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid  5153] <... clone resumed>, parent_tid=[5155], tls=0xffff8360f660, child_tidptr=0xffff8360ef70) = 5155
+[pid  5155] <... rseq resumed>)         = 0
+[pid  5153] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5155] set_robust_list(0xffff8360ef80, 24 <unfinished ...>
+[pid  5153] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5155] <... set_robust_list resumed>) = 0
+[pid  5153] eventfd2(0, EFD_CLOEXEC <unfinished ...>
+[pid  5155] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5153] <... eventfd2 resumed>)     = 9
+[pid  5155] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5153] fcntl(9, F_GETFL <unfinished ...>
+[pid  5155] rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+[pid  5153] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5155] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5153] fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5155] sched_getparam(5155,  <unfinished ...>
+[pid  5153] <... fcntl resumed>)        = 0
+[pid  5155] <... sched_getparam resumed>[0]) = 0
+[pid  5153] fcntl(9, F_GETFL <unfinished ...>
+[pid  5155] sched_getscheduler(5155 <unfinished ...>
+[pid  5153] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5155] <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+[pid  5153] fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5155] sched_setscheduler(5155, SCHED_OTHER, [0] <unfinished ...>
+[pid  5153] <... fcntl resumed>)        = 0
+[pid  5155] <... sched_setscheduler resumed>) = 0
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] prctl(PR_SET_NAME, "ZMQbg/IO/0" <unfinished ...>
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] <... prctl resumed>)        = 0
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0) = 0 (Timeout)
+[pid  5153] socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 10
+[pid  5153] bind(10, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+[pid  5153] getsockname(10, {sa_family=AF_NETLINK, nl_pid=5153, nl_groups=00000000}, [12]) = 0
+[pid  5153] sendto(10, [{nlmsg_len=20, nlmsg_type=RTM_GETLINK, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1741222074, nlmsg_pid=0}, {ifi_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+[pid  5153] recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1432, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_LOOPBACK, ifi_index=if_nametoindex("lo"), ifi_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING|IFF_LOWER_UP, ifi_change=0}, [[{nla_len=7, nla_type=IFLA_IFNAME}, "lo"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 0], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 65536], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\xf8\xff\x07\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00], [{nla_len=10, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=9925, tx_packets=9925, rx_bytes=18797875, tx_bytes=18797875, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=9925, tx_packets=9925, rx_bytes=18797875, tx_bytes=18797875, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=12, nla_type=IFLA_QDISC}, "noqueue"], [{nla_len=812, nla_type=IFLA_AF_SPEC}, [[{nla_len=140, nla_type=AF_INET}, [{nla_len=136, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 1, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 0, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 1, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 1, [IPV4_DEVCONF_NOPOLICY-1] = 1, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 0, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000, [IPV4_DEVCONF_IGNORE_ROUTES_WITH_LINKDOWN-1] = 0, [IPV4_DEVCONF_DROP_UNICAST_IN_L2_MULTICAST-1] = 0, [IPV4_DEVCONF_DROP_GRATUITOUS_ARP-1] = 0, [IPV4_DEVCONF_BC_FORWARDING-1] = 0, ...]]], [{nla_len=668, nla_type=AF_INET6}, [[{nla_len=8, nla_type=IFLA_INET6_FLAGS}, IF_READY], [{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=14484, reachable_time=15192, retrans_time=1000}], [{nla_len=240, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 65536, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = -1, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = -1, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = -1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]], [{nla_len=308, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 38, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]], [{nla_len=60, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 7, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0, [6 /* ICMP6_MIB_??? */] = 0]], [{nla_len=20, nla_type=IFLA_INET6_TOKEN}, inet_pton(AF_INET6, "::")], [{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64]]]]], [{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}], ...]], [{nlmsg_len=884, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_TUNNEL, ifi_index=if_nametoindex("tunl0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=10, nla_type=IFLA_IFNAME}, "tunl0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1480], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=8, nla_type=IFLA_ADDRESS}, 00:00:00:00], [{nla_len=8, nla_type=IFLA_BROADCAST}, 00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=116, nla_type=IFLA_LINKINFO}, [[{nla_len=9, nla_type=IFLA_INFO_KIND}, "ipip"], [{nla_len=100, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x08\x00\x02\x00\x00\x00\x00\x00\x08\x00\x03\x00\x00\x00\x00\x00\x05\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]], [{nlmsg_len=912, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_IPGRE, ifi_index=if_nametoindex("gre0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=9, nla_type=IFLA_IFNAME}, "gre0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1476], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=8, nla_type=IFLA_ADDRESS}, 00:00:00:00], [{nla_len=8, nla_type=IFLA_BROADCAST}, 00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=144, nla_type=IFLA_LINKINFO}, [[{nla_len=8, nla_type=IFLA_INFO_KIND}, "gre"], [{nla_len=132, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x06\x00\x02\x00\x00\x00\x00\x00\x06\x00\x03\x00\x00\x00\x00\x00\x08\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3228
+[pid  5153] recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1592, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("gretap0"), ifi_flags=IFF_BROADCAST|IFF_MULTICAST, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "gretap0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1462], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00], [{nla_len=10, nla_type=IFLA_BROADCAST}, ff:ff:ff:ff:ff:ff], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=148, nla_type=IFLA_LINKINFO}, [[{nla_len=11, nla_type=IFLA_INFO_KIND}, "gretap"], [{nla_len=132, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x06\x00\x02\x00\x00\x00\x00\x00\x06\x00\x03\x00\x00\x00\x00\x00\x08\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]], [{nlmsg_len=1608, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("erspan0"), ifi_flags=IFF_BROADCAST|IFF_MULTICAST, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "erspan0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1450], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00], [{nla_len=10, nla_type=IFLA_BROADCAST}, ff:ff:ff:ff:ff:ff], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=164, nla_type=IFLA_LINKINFO}, [[{nla_len=11, nla_type=IFLA_INFO_KIND}, "erspan"], [{nla_len=148, nla_type=IFLA_INFO_DATA}, "\x05\x00\x16\x00\x01\x00\x00\x00\x08\x00\x15\x00\x00\x00\x00\x00\x08\x00\x01\x00\x00\x00\x00\x00\x06\x00\x02\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]], [{nlmsg_len=832, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_TUNNEL, ifi_index=if_nametoindex("ip_vti0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "ip_vti0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1480], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=8, nla_type=IFLA_ADDRESS}, 00:00:00:00], [{nla_len=8, nla_type=IFLA_BROADCAST}, 00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=64, nla_type=IFLA_LINKINFO}, [[{nla_len=8, nla_type=IFLA_INFO_KIND}, "vti"], [{nla_len=52, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x08\x00\x02\x00\x00\x00\x00\x00\x08\x00\x03\x00\x00\x00\x00\x00\x08\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 4032
+[pid  5153] recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1576, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_TUNNEL6, ifi_index=if_nametoindex("ip6_vti0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=13, nla_type=IFLA_IFNAME}, "ip6_vti0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1428], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65495], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=20, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00:00], [{nla_len=20, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=92, nla_type=IFLA_LINKINFO}, [[{nla_len=9, nla_type=IFLA_INFO_KIND}, "vti6"], [{nla_len=76, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x14\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00\x05\x00"...]]], [{nla_len=20, nla_type=IFLA_PERM_ADDRESS}, 1a:8b:b1:5c:4b:8d:00], [{nla_len=8, nla_type=IFLA_LINK}, 0], ...]], [{nlmsg_len=1600, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_SIT, ifi_index=if_nametoindex("sit0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=9, nla_type=IFLA_IFNAME}, "sit0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1480], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 1280], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65555], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=8, nla_type=IFLA_ADDRESS}, 00:00:00:00], [{nla_len=8, nla_type=IFLA_BROADCAST}, 00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=164, nla_type=IFLA_LINKINFO}, [[{nla_len=8, nla_type=IFLA_INFO_KIND}, "sit"], [{nla_len=152, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x08\x00\x02\x00\x00\x00\x00\x00\x08\x00\x03\x00\x00\x00\x00\x00\x05\x00\x04\x00\x40\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3176
+[pid  5153] recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1628, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_TUNNEL6, ifi_index=if_nametoindex("ip6tnl0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "ip6tnl0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1452], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65535], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=20, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00:00], [{nla_len=20, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=148, nla_type=IFLA_LINKINFO}, [[{nla_len=11, nla_type=IFLA_INFO_KIND}, "ip6tnl"], [{nla_len=132, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x14\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00\x03\x00"...]]], [{nla_len=20, nla_type=IFLA_PERM_ADDRESS}, 72:6a:24:6b:84:c5:00], [{nla_len=8, nla_type=IFLA_LINK}, 0], ...]], [{nlmsg_len=1652, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_IP6GRE, ifi_index=if_nametoindex("ip6gre0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "ip6gre0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1448], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=20, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00:00], [{nla_len=20, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=172, nla_type=IFLA_LINKINFO}, [[{nla_len=11, nla_type=IFLA_INFO_KIND}, "ip6gre"], [{nla_len=156, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x06\x00\x02\x00\x00\x00\x00\x00\x06\x00\x03\x00\x00\x00\x00\x00\x08\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=20, nla_type=IFLA_PERM_ADDRESS}, 06:d1:90:f8:48:fb:00], [{nla_len=8, nla_type=IFLA_LINK}, 0], ...]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3280
+[pid  5153] recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=1468, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth0"), ifi_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST|IFF_LOWER_UP, ifi_change=0}, [[{nla_len=9, nla_type=IFLA_IFNAME}, "eth0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 0], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 6], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 65535], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65535], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 10], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\xf8\xff\x07\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 10], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 2], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 1], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=10, nla_type=IFLA_ADDRESS}, 02:42:ac:11:00:03], [{nla_len=10, nla_type=IFLA_BROADCAST}, ff:ff:ff:ff:ff:ff], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=3354, tx_packets=1753, rx_bytes=51454683, tx_bytes=150138, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=3354, tx_packets=1753, rx_bytes=51454683, tx_bytes=150138, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=16, nla_type=IFLA_LINKINFO}, [{nla_len=9, nla_type=IFLA_INFO_KIND}, "veth"]], [{nla_len=8, nla_type=IFLA_LINK_NETNSID}, 0], [{nla_len=8, nla_type=IFLA_LINK}, 20], ...]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 1468
+[pid  5153] recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222074, nlmsg_pid=5153}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+[pid  5153] sendto(10, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1741222075, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+[pid  5153] recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5153}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=14484, tstamp=14484}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5153}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.17.0.3")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.17.0.3")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.17.255.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=14490, tstamp=14490}]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5153}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=14484, tstamp=14484}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=0xb /* IFA_??? */}, "\x01"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 244
+[pid  5153] recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5153}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+[pid  5153] close(10)                   = 0
+[pid  5153] socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 10
+[pid  5153] setsockopt(10, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+[pid  5153] bind(10, {sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+[pid  5153] listen(10, 100)             = 0
+[pid  5153] getsockname(10, {sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5153] getsockname(10, {sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5153] getpid()                    = 5153
+[pid  5153] write(7, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664093488, u64=187650785255728}}], 256, -1, NULL, 8) = 1
+[pid  5153] <... write resumed>)        = 8
+[pid  5155] getpid( <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] ppoll([{fd=7, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5153] write(9, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5155] <... ppoll resumed>)        = 1 ([{fd=7, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5153] <... write resumed>)        = 8
+[pid  5155] getpid( <unfinished ...>
+[pid  5153] write(1, "Compute Node 1 started, listenin"..., 58 <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5153] <... write resumed>)        = 58
+[pid  5155] read(7,  <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, NULL, NULL, 0 <unfinished ...>
+[pid  5155] <... mmap resumed>)         = 0xffff7ae00000
+[pid  5153] <... ppoll resumed>)        = 1 ([{fd=9, revents=POLLIN}])
+[pid  5155] munmap(0xffff7ae00000, 18874368 <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... munmap resumed>)       = 0
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] munmap(0xffff80000000, 48234496 <unfinished ...>
+[pid  5153] read(9,  <unfinished ...>
+[pid  5155] <... munmap resumed>)       = 0
+[pid  5153] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5155] mprotect(0xffff7c000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... mprotect resumed>)     = 0
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] epoll_ctl(8, EPOLL_CTL_ADD, 10, {events=0, data={u32=2080377712, u64=281472762121072}} <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5153] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 10, {events=EPOLLIN, data={u32=2080377712, u64=281472762121072}} <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] getpid( <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, NULL, NULL, 0 <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5155] ppoll([{fd=7, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0) = 0 (Timeout)
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5151] <... clock_nanosleep resumed>0xffffe4f67958) = 0
+[pid  5151] eventfd2(0, EFD_CLOEXEC)    = 4
+[pid  5151] fcntl(4, F_GETFL)           = 0x2 (flags O_RDWR)
+[pid  5151] fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+[pid  5151] fcntl(4, F_GETFL)           = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5151] fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+[pid  5151] getpid()                    = 5151
+[pid  5151] epoll_create1(EPOLL_CLOEXEC) = 5
+[pid  5151] epoll_ctl(5, EPOLL_CTL_ADD, 4, {events=0, data={u32=3664068656, u64=187650785230896}}) = 0
+[pid  5151] epoll_ctl(5, EPOLL_CTL_MOD, 4, {events=EPOLLIN, data={u32=3664068656, u64=187650785230896}}) = 0
+[pid  5151] getpid()                    = 5151
+[pid  5151] rt_sigaction(SIGRT_1, {sa_handler=0xffff8493a700, sa_mask=[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+[pid  5151] rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+[pid  5151] mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xffff83800000
+[pid  5151] mprotect(0xffff83810000, 8388608, PROT_READ|PROT_WRITE) = 0
+[pid  5151] rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+[pid  5151] clone(child_stack=0xffff8400e6e0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[5172], tls=0xffff8400f660, child_tidptr=0xffff8400ef70) = 5172
+strace: Process 5172 attached
+[pid  5151] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5172] rseq(0xffff8400f640, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid  5151] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5172] <... rseq resumed>)         = 0
+[pid  5151] eventfd2(0, EFD_CLOEXEC <unfinished ...>
+[pid  5172] set_robust_list(0xffff8400ef80, 24 <unfinished ...>
+[pid  5151] <... eventfd2 resumed>)     = 6
+[pid  5172] <... set_robust_list resumed>) = 0
+[pid  5151] fcntl(6, F_GETFL <unfinished ...>
+[pid  5172] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5151] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5172] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5151] fcntl(6, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5172] rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+[pid  5151] <... fcntl resumed>)        = 0
+[pid  5172] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5151] fcntl(6, F_GETFL <unfinished ...>
+[pid  5172] sched_getparam(5172,  <unfinished ...>
+[pid  5151] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5172] <... sched_getparam resumed>[0]) = 0
+[pid  5151] fcntl(6, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5172] sched_getscheduler(5172 <unfinished ...>
+[pid  5151] <... fcntl resumed>)        = 0
+[pid  5172] <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+[pid  5151] getpid( <unfinished ...>
+[pid  5172] sched_setscheduler(5172, SCHED_OTHER, [0] <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5172] <... sched_setscheduler resumed>) = 0
+[pid  5151] epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+[pid  5172] prctl(PR_SET_NAME, "ZMQbg/Reaper" <unfinished ...>
+[pid  5151] <... epoll_create1 resumed>) = 7
+[pid  5172] <... prctl resumed>)        = 0
+[pid  5151] epoll_ctl(7, EPOLL_CTL_ADD, 6, {events=0, data={u32=3664090192, u64=187650785252432}} <unfinished ...>
+[pid  5172] epoll_pwait(5,  <unfinished ...>
+[pid  5151] <... epoll_ctl resumed>)    = 0
+[pid  5151] epoll_ctl(7, EPOLL_CTL_MOD, 6, {events=EPOLLIN, data={u32=3664090192, u64=187650785252432}}) = 0
+[pid  5151] mmap(NULL, 8454144, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0xffff82e00000
+[pid  5151] mprotect(0xffff82e10000, 8388608, PROT_READ|PROT_WRITE) = 0
+[pid  5151] rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+[pid  5151] clone(child_stack=0xffff8360e6e0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[5173], tls=0xffff8360f660, child_tidptr=0xffff8360ef70) = 5173
+strace: Process 5173 attached
+[pid  5151] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5173] rseq(0xffff8360f640, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid  5151] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5173] <... rseq resumed>)         = 0
+[pid  5151] eventfd2(0, EFD_CLOEXEC)    = 8
+[pid  5173] set_robust_list(0xffff8360ef80, 24 <unfinished ...>
+[pid  5151] fcntl(8, F_GETFL <unfinished ...>
+[pid  5173] <... set_robust_list resumed>) = 0
+[pid  5151] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5173] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5151] fcntl(8, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5173] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5151] <... fcntl resumed>)        = 0
+[pid  5173] rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+[pid  5151] fcntl(8, F_GETFL <unfinished ...>
+[pid  5173] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5151] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5173] sched_getparam(5173,  <unfinished ...>
+[pid  5151] fcntl(8, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5173] <... sched_getparam resumed>[0]) = 0
+[pid  5151] <... fcntl resumed>)        = 0
+[pid  5173] sched_getscheduler(5173 <unfinished ...>
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] sched_setscheduler(5173, SCHED_OTHER, [0] <unfinished ...>
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] <... sched_setscheduler resumed>) = 0
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] prctl(PR_SET_NAME, "ZMQbg/IO/0" <unfinished ...>
+[pid  5151] ppoll([{fd=8, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5173] <... prctl resumed>)        = 0
+[pid  5151] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5151] brk(0xaaaada684000 <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5151] <... brk resumed>)          = 0xaaaada684000
+[pid  5151] futex(0xffff846277a4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+[pid  5151] futex(0xffff846277b0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+[pid  5151] getpid()                    = 5151
+[pid  5151] write(6, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664090192, u64=187650785252432}}], 256, -1, NULL, 8) = 1
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] getpid( <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5151] write(8, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5173] ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5151] <... write resumed>)        = 8
+[pid  5173] <... ppoll resumed>)        = 1 ([{fd=6, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5151] write(1, "Ok: 5153\n", 9 <unfinished ...>
+[pid  5173] getpid( <unfinished ...>
+[pid  5151] <... write resumed>)        = 9
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5151] pselect6(1, [0], NULL, NULL, {tv_sec=0, tv_nsec=0}, NULL <unfinished ...>
+[pid  5173] read(6,  <unfinished ...>
+[pid  5151] <... pselect6 resumed>)     = 1 (in [0], left {tv_sec=0, tv_nsec=0})
+[pid  5173] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5151] write(1, "Received command: ping 1\n", 25 <unfinished ...>
+[pid  5173] mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+[pid  5151] <... write resumed>)        = 25
+[pid  5173] <... mmap resumed>)         = 0xffff7ae00000
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] munmap(0xffff7ae00000, 18874368 <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... munmap resumed>)       = 0
+[pid  5151] ppoll([{fd=8, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5173] munmap(0xffff80000000, 48234496 <unfinished ...>
+[pid  5151] <... ppoll resumed>)        = 1 ([{fd=8, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5173] <... munmap resumed>)       = 0
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] mprotect(0xffff7c000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... mprotect resumed>)     = 0
+[pid  5151] read(8,  <unfinished ...>
+[pid  5173] socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP <unfinished ...>
+[pid  5151] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5173] <... socket resumed>)       = 9
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] fcntl(9, F_GETFL <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5151] ppoll([{fd=8, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0) = 0 (Timeout)
+[pid  5173] fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] <... fcntl resumed>)        = 0
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] connect(9, {sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
+[pid  5151] ppoll([{fd=8, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5173] <... connect resumed>)      = -1 EINPROGRESS (Operation now in progress)
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080377712, u64=281472762121072}}], 256, -1, NULL, 8) = 1
+[pid  5151] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5173] epoll_ctl(7, EPOLL_CTL_ADD, 9, {events=0, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5151] pselect6(1, [0], NULL, NULL, {tv_sec=0, tv_nsec=0}, NULL <unfinished ...>
+[pid  5155] accept4(10,  <unfinished ...>
+[pid  5151] <... pselect6 resumed>)     = 1 (in [0], left {tv_sec=0, tv_nsec=0})
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5151] write(1, "Received command: exec 1 3 5 7 9"..., 33 <unfinished ...>
+[pid  5155] <... accept4 resumed>{sa_family=AF_INET, sin_port=htons(41806), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC) = 11
+[pid  5151] <... write resumed>)        = 33
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLOUT, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5151] getpid( <unfinished ...>
+[pid  5155] setsockopt(11, SOL_TCP, TCP_NODELAY, [1], 4 <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5151] ppoll([{fd=8, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5155] <... setsockopt resumed>)   = 0
+[pid  5151] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5173] getpid( <unfinished ...>
+[pid  5151] write(1, "Error:1: Node is unavailable\n", 29 <unfinished ...>
+[pid  5155] getsockname(11,  <unfinished ...>
+[pid  5151] <... write resumed>)        = 29
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5151] getpid( <unfinished ...>
+[pid  5155] <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5151] ppoll([{fd=8, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5155] getpeername(11,  <unfinished ...>
+[pid  5151] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5173] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5151] pselect6(1, [0], NULL, NULL, {tv_sec=0, tv_nsec=0}, NULL <unfinished ...>
+[pid  5155] <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(41806), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5151] <... pselect6 resumed>)     = 1 (in [0], left {tv_sec=0, tv_nsec=0})
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5151] write(1, "Received command: create 2\n", 27 <unfinished ...>
+[pid  5155] getpeername(11,  <unfinished ...>
+[pid  5151] <... write resumed>)        = 27
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080379952, u64=281472762123312}}], 256, -1, NULL, 8) = 1
+[pid  5151] clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+[pid  5155] <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(41806), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+strace: Process 5174 attached
+[pid  5173] epoll_ctl(7, EPOLL_CTL_DEL, 9, 0xffff7c001438 <unfinished ...>
+[pid  5155] fcntl(11, F_GETFL <unfinished ...>
+[pid  5151] <... clone resumed>, child_tidptr=0xffff84b0c0f0) = 5174
+[pid  5174] set_robust_list(0xffff84b0c100, 24 <unfinished ...>
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5151] clock_nanosleep(CLOCK_REALTIME, 0, {tv_sec=1, tv_nsec=0},  <unfinished ...>
+[pid  5174] <... set_robust_list resumed>) = 0
+[pid  5155] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5173] getsockopt(9, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+[pid  5174] eventfd2(0, EFD_CLOEXEC <unfinished ...>
+[pid  5155] fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5174] <... eventfd2 resumed>)     = 10
+[pid  5173] <... getsockopt resumed>[0], [4]) = 0
+[pid  5174] fcntl(10, F_GETFL <unfinished ...>
+[pid  5155] <... fcntl resumed>)        = 0
+[pid  5174] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5173] setsockopt(9, SOL_TCP, TCP_NODELAY, [1], 4 <unfinished ...>
+[pid  5174] fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5155] getpid( <unfinished ...>
+[pid  5174] <... fcntl resumed>)        = 0
+[pid  5173] <... setsockopt resumed>)   = 0
+[pid  5174] fcntl(10, F_GETFL <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5174] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5173] getsockname(9,  <unfinished ...>
+[pid  5174] fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5155] write(7, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5174] <... fcntl resumed>)        = 0
+[pid  5173] <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(41806), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5174] getpid( <unfinished ...>
+[pid  5155] <... write resumed>)        = 8
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] getpeername(9,  <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5174] eventfd2(0, EFD_CLOEXEC <unfinished ...>
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664093488, u64=187650785255728}}], 256, -1, NULL, 8) = 1
+[pid  5174] <... eventfd2 resumed>)     = 11
+[pid  5173] fcntl(9, F_GETFL <unfinished ...>
+[pid  5174] fcntl(11, F_GETFL <unfinished ...>
+[pid  5155] getpid( <unfinished ...>
+[pid  5174] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5173] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5174] fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5174] <... fcntl resumed>)        = 0
+[pid  5173] fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5174] fcntl(11, F_GETFL <unfinished ...>
+[pid  5155] ppoll([{fd=7, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5174] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5173] <... fcntl resumed>)        = 0
+[pid  5174] fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5155] <... ppoll resumed>)        = 1 ([{fd=7, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5174] <... fcntl resumed>)        = 0
+[pid  5173] getpid( <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5155] getpid( <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5174] epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5174] <... epoll_create1 resumed>) = 12
+[pid  5173] write(6, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5174] epoll_ctl(12, EPOLL_CTL_ADD, 11, {events=0, data={u32=3664146064, u64=187650785308304}} <unfinished ...>
+[pid  5155] read(7,  <unfinished ...>
+[pid  5174] <... epoll_ctl resumed>)    = 0
+[pid  5173] <... write resumed>)        = 8
+[pid  5174] epoll_ctl(12, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=3664146064, u64=187650785308304}} <unfinished ...>
+[pid  5155] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5174] <... epoll_ctl resumed>)    = 0
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5155] epoll_ctl(8, EPOLL_CTL_ADD, 11, {events=0, data={u32=2080381392, u64=281472762124752}} <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664090192, u64=187650785252432}}], 256, -1, NULL, 8) = 1
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5174] rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+[pid  5173] getpid( <unfinished ...>
+[pid  5174] <... rt_sigprocmask resumed>[], 8) = 0
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=2080381392, u64=281472762124752}} <unfinished ...>
+[pid  5174] clone(child_stack=0xffff8360e6e0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+[pid  5173] <... getpid resumed>)       = 5151
+strace: Process 5175 attached
+[pid  5173] ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5175] rseq(0xffff8360f640, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid  5174] <... clone resumed>, parent_tid=[5175], tls=0xffff8360f660, child_tidptr=0xffff8360ef70) = 5175
+[pid  5173] <... ppoll resumed>)        = 1 ([{fd=6, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5175] <... rseq resumed>)         = 0
+[pid  5174] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=2080381392, u64=281472762124752}} <unfinished ...>
+[pid  5175] set_robust_list(0xffff8360ef80, 24 <unfinished ...>
+[pid  5174] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5173] getpid( <unfinished ...>
+[pid  5175] <... set_robust_list resumed>) = 0
+[pid  5174] eventfd2(0, EFD_CLOEXEC <unfinished ...>
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5175] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5174] <... eventfd2 resumed>)     = 13
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5175] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5174] fcntl(13, F_GETFL <unfinished ...>
+[pid  5155] recvfrom(11,  <unfinished ...>
+[pid  5175] rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+[pid  5174] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5173] read(6,  <unfinished ...>
+[pid  5175] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5174] fcntl(13, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5155] <... recvfrom resumed>0xffff7c001308, 12, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5175] sched_getparam(5175,  <unfinished ...>
+[pid  5174] <... fcntl resumed>)        = 0
+[pid  5173] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5175] <... sched_getparam resumed>[0]) = 0
+[pid  5174] fcntl(13, F_GETFL <unfinished ...>
+[pid  5155] getpid( <unfinished ...>
+[pid  5175] sched_getscheduler(5175 <unfinished ...>
+[pid  5174] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5173] epoll_ctl(7, EPOLL_CTL_ADD, 9, {events=0, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5175] <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+[pid  5174] fcntl(13, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5175] sched_setscheduler(5175, SCHED_OTHER, [0] <unfinished ...>
+[pid  5174] <... fcntl resumed>)        = 0
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5175] <... sched_setscheduler resumed>) = 0
+[pid  5174] getpid( <unfinished ...>
+[pid  5155] ppoll([{fd=7, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5175] prctl(PR_SET_NAME, "ZMQbg/Reaper" <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5175] <... prctl resumed>)        = 0
+[pid  5174] epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+[pid  5155] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5175] epoll_pwait(12,  <unfinished ...>
+[pid  5174] <... epoll_create1 resumed>) = 14
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5174] epoll_ctl(14, EPOLL_CTL_ADD, 13, {events=0, data={u32=3664149216, u64=187650785311456}} <unfinished ...>
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5174] <... epoll_ctl resumed>)    = 0
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5174] epoll_ctl(14, EPOLL_CTL_MOD, 13, {events=EPOLLIN, data={u32=3664149216, u64=187650785311456}} <unfinished ...>
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080381392, u64=281472762124752}}], 256, 29994, NULL, 8) = 1
+[pid  5174] <... epoll_ctl resumed>)    = 0
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5174] rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+[pid  5155] sendto(11, "\377\0\0\0\0\0\0\0\1\177", 10, 0, NULL, 0 <unfinished ...>
+[pid  5174] <... rt_sigprocmask resumed>[], 8) = 0
+[pid  5173] recvfrom(9,  <unfinished ...>
+[pid  5174] clone(child_stack=0xffff8400e6e0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+[pid  5155] <... sendto resumed>)       = 10
+strace: Process 5176 attached
+[pid  5173] <... recvfrom resumed>"\377\0\0\0\0\0\0\0\1\177", 12, 0, NULL, NULL) = 10
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=2080381392, u64=281472762124752}} <unfinished ...>
+[pid  5176] rseq(0xffff8400f640, 0x20, 0, 0xd428bc00 <unfinished ...>
+[pid  5174] <... clone resumed>, parent_tid=[5176], tls=0xffff8400f660, child_tidptr=0xffff8400ef70) = 5176
+[pid  5173] recvfrom(9,  <unfinished ...>
+[pid  5176] <... rseq resumed>)         = 0
+[pid  5174] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5176] set_robust_list(0xffff8400ef80, 24 <unfinished ...>
+[pid  5174] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5173] <... recvfrom resumed>0xffff7c001c02, 2, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5176] <... set_robust_list resumed>) = 0
+[pid  5174] eventfd2(0, EFD_CLOEXEC <unfinished ...>
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5176] rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+[pid  5174] <... eventfd2 resumed>)     = 15
+[pid  5173] getpid( <unfinished ...>
+[pid  5176] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5174] fcntl(15, F_GETFL <unfinished ...>
+[pid  5176] rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5176] <... rt_sigprocmask resumed>NULL, 8) = 0
+[pid  5174] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5176] sched_getparam(5176,  <unfinished ...>
+[pid  5173] ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5176] <... sched_getparam resumed>[0]) = 0
+[pid  5174] fcntl(15, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5176] sched_getscheduler(5176 <unfinished ...>
+[pid  5173] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5176] <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+[pid  5174] <... fcntl resumed>)        = 0
+[pid  5176] sched_setscheduler(5176, SCHED_OTHER, [0] <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5176] <... sched_setscheduler resumed>) = 0
+[pid  5174] fcntl(15, F_GETFL <unfinished ...>
+[pid  5176] prctl(PR_SET_NAME, "ZMQbg/IO/0" <unfinished ...>
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080379952, u64=281472762123312}}], 256, 29994, NULL, 8) = 1
+[pid  5176] <... prctl resumed>)        = 0
+[pid  5174] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5173] sendto(9, "\377\0\0\0\0\0\0\0\1\177\3", 11, 0, NULL, 0 <unfinished ...>
+[pid  5174] fcntl(15, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5173] <... sendto resumed>)       = 11
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080381392, u64=281472762124752}}], 256, 29992, NULL, 8) = 1
+[pid  5174] <... fcntl resumed>)        = 0
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5155] recvfrom(11,  <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5174] getpid( <unfinished ...>
+[pid  5155] <... recvfrom resumed>"\377\0\0\0\0\0\0\0\1\177\3", 12, 0, NULL, NULL) = 11
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5174] ppoll([{fd=15, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=2080381392, u64=281472762124752}} <unfinished ...>
+[pid  5174] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5174] socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE <unfinished ...>
+[pid  5155] recvfrom(11,  <unfinished ...>
+[pid  5174] <... socket resumed>)       = 16
+[pid  5155] <... recvfrom resumed>0xffff7c001313, 53, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5174] bind(16, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5174] <... bind resumed>)         = 0
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080381392, u64=281472762124752}}], 256, 29987, NULL, 8) = 1
+[pid  5174] getsockname(16,  <unfinished ...>
+[pid  5155] sendto(11, "\3\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 54, 0, NULL, 0 <unfinished ...>
+[pid  5174] <... getsockname resumed>{sa_family=AF_NETLINK, nl_pid=5174, nl_groups=00000000}, [12]) = 0
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080379952, u64=281472762123312}}], 256, 29992, NULL, 8) = 1
+[pid  5155] <... sendto resumed>)       = 54
+[pid  5174] sendto(16, [{nlmsg_len=20, nlmsg_type=RTM_GETLINK, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1741222075, nlmsg_pid=0}, {ifi_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+[pid  5173] recvfrom(9,  <unfinished ...>
+[pid  5174] <... sendto resumed>)       = 20
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=2080381392, u64=281472762124752}} <unfinished ...>
+[pid  5174] recvmsg(16,  <unfinished ...>
+[pid  5173] <... recvfrom resumed>"\3\1", 2, 0, NULL, NULL) = 2
+[pid  5174] <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1432, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_LOOPBACK, ifi_index=if_nametoindex("lo"), ifi_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING|IFF_LOWER_UP, ifi_change=0}, [[{nla_len=7, nla_type=IFLA_IFNAME}, "lo"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 0], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 65536], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\xf8\xff\x07\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00], [{nla_len=10, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=9971, tx_packets=9971, rx_bytes=18822007, tx_bytes=18822007, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=9971, tx_packets=9971, rx_bytes=18822007, tx_bytes=18822007, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=12, nla_type=IFLA_QDISC}, "noqueue"], [{nla_len=812, nla_type=IFLA_AF_SPEC}, [[{nla_len=140, nla_type=AF_INET}, [{nla_len=136, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 1, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 0, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 1, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 1, [IPV4_DEVCONF_NOPOLICY-1] = 1, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 0, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000, [IPV4_DEVCONF_IGNORE_ROUTES_WITH_LINKDOWN-1] = 0, [IPV4_DEVCONF_DROP_UNICAST_IN_L2_MULTICAST-1] = 0, [IPV4_DEVCONF_DROP_GRATUITOUS_ARP-1] = 0, [IPV4_DEVCONF_BC_FORWARDING-1] = 0, ...]]], [{nla_len=668, nla_type=AF_INET6}, [[{nla_len=8, nla_type=IFLA_INET6_FLAGS}, IF_READY], [{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=14484, reachable_time=15192, retrans_time=1000}], [{nla_len=240, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 65536, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = -1, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = -1, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = -1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]], [{nla_len=308, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 38, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]], [{nla_len=60, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 7, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0, [6 /* ICMP6_MIB_??? */] = 0]], [{nla_len=20, nla_type=IFLA_INET6_TOKEN}, inet_pton(AF_INET6, "::")], [{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64]]]]], [{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}], ...]], [{nlmsg_len=884, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_TUNNEL, ifi_index=if_nametoindex("tunl0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=10, nla_type=IFLA_IFNAME}, "tunl0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1480], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=8, nla_type=IFLA_ADDRESS}, 00:00:00:00], [{nla_len=8, nla_type=IFLA_BROADCAST}, 00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=116, nla_type=IFLA_LINKINFO}, [[{nla_len=9, nla_type=IFLA_INFO_KIND}, "ipip"], [{nla_len=100, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x08\x00\x02\x00\x00\x00\x00\x00\x08\x00\x03\x00\x00\x00\x00\x00\x05\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]], [{nlmsg_len=912, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_IPGRE, ifi_index=if_nametoindex("gre0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=9, nla_type=IFLA_IFNAME}, "gre0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1476], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=8, nla_type=IFLA_ADDRESS}, 00:00:00:00], [{nla_len=8, nla_type=IFLA_BROADCAST}, 00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=144, nla_type=IFLA_LINKINFO}, [[{nla_len=8, nla_type=IFLA_INFO_KIND}, "gre"], [{nla_len=132, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x06\x00\x02\x00\x00\x00\x00\x00\x06\x00\x03\x00\x00\x00\x00\x00\x08\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3228
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5174] recvmsg(16,  <unfinished ...>
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5174] <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1592, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("gretap0"), ifi_flags=IFF_BROADCAST|IFF_MULTICAST, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "gretap0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1462], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00], [{nla_len=10, nla_type=IFLA_BROADCAST}, ff:ff:ff:ff:ff:ff], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=148, nla_type=IFLA_LINKINFO}, [[{nla_len=11, nla_type=IFLA_INFO_KIND}, "gretap"], [{nla_len=132, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x06\x00\x02\x00\x00\x00\x00\x00\x06\x00\x03\x00\x00\x00\x00\x00\x08\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]], [{nlmsg_len=1608, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("erspan0"), ifi_flags=IFF_BROADCAST|IFF_MULTICAST, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "erspan0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1450], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00], [{nla_len=10, nla_type=IFLA_BROADCAST}, ff:ff:ff:ff:ff:ff], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=164, nla_type=IFLA_LINKINFO}, [[{nla_len=11, nla_type=IFLA_INFO_KIND}, "erspan"], [{nla_len=148, nla_type=IFLA_INFO_DATA}, "\x05\x00\x16\x00\x01\x00\x00\x00\x08\x00\x15\x00\x00\x00\x00\x00\x08\x00\x01\x00\x00\x00\x00\x00\x06\x00\x02\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]], [{nlmsg_len=832, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_TUNNEL, ifi_index=if_nametoindex("ip_vti0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "ip_vti0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1480], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=8, nla_type=IFLA_ADDRESS}, 00:00:00:00], [{nla_len=8, nla_type=IFLA_BROADCAST}, 00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=64, nla_type=IFLA_LINKINFO}, [[{nla_len=8, nla_type=IFLA_INFO_KIND}, "vti"], [{nla_len=52, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x08\x00\x02\x00\x00\x00\x00\x00\x08\x00\x03\x00\x00\x00\x00\x00\x08\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 4032
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5174] recvmsg(16,  <unfinished ...>
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5174] <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1576, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_TUNNEL6, ifi_index=if_nametoindex("ip6_vti0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=13, nla_type=IFLA_IFNAME}, "ip6_vti0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1428], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65495], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=20, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00:00], [{nla_len=20, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=92, nla_type=IFLA_LINKINFO}, [[{nla_len=9, nla_type=IFLA_INFO_KIND}, "vti6"], [{nla_len=76, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x14\x00\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00\x05\x00"...]]], [{nla_len=20, nla_type=IFLA_PERM_ADDRESS}, 1a:8b:b1:5c:4b:8d:00], [{nla_len=8, nla_type=IFLA_LINK}, 0], ...]], [{nlmsg_len=1600, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_SIT, ifi_index=if_nametoindex("sit0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=9, nla_type=IFLA_IFNAME}, "sit0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1480], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 1280], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65555], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=8, nla_type=IFLA_ADDRESS}, 00:00:00:00], [{nla_len=8, nla_type=IFLA_BROADCAST}, 00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=164, nla_type=IFLA_LINKINFO}, [[{nla_len=8, nla_type=IFLA_INFO_KIND}, "sit"], [{nla_len=152, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x08\x00\x02\x00\x00\x00\x00\x00\x08\x00\x03\x00\x00\x00\x00\x00\x05\x00\x04\x00\x40\x00\x00\x00"...]]], [{nla_len=8, nla_type=IFLA_LINK}, 0], [{nla_len=9, nla_type=IFLA_QDISC}, "noop"], ...]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3176
+[pid  5173] recvfrom(9,  <unfinished ...>
+[pid  5174] recvmsg(16,  <unfinished ...>
+[pid  5173] <... recvfrom resumed>"NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 52, 0, NULL, NULL) = 52
+[pid  5174] <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1628, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_TUNNEL6, ifi_index=if_nametoindex("ip6tnl0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "ip6tnl0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1452], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65535], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=20, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00:00], [{nla_len=20, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=148, nla_type=IFLA_LINKINFO}, [[{nla_len=11, nla_type=IFLA_INFO_KIND}, "ip6tnl"], [{nla_len=132, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x14\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x14\x00\x03\x00"...]]], [{nla_len=20, nla_type=IFLA_PERM_ADDRESS}, 72:6a:24:6b:84:c5:00], [{nla_len=8, nla_type=IFLA_LINK}, 0], ...]], [{nlmsg_len=1652, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_IP6GRE, ifi_index=if_nametoindex("ip6gre0"), ifi_flags=IFF_NOARP, ifi_change=0}, [[{nla_len=12, nla_type=IFLA_IFNAME}, "ip6gre0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 2], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1448], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=20, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00:00], [{nla_len=20, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00:00], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=172, nla_type=IFLA_LINKINFO}, [[{nla_len=11, nla_type=IFLA_INFO_KIND}, "ip6gre"], [{nla_len=156, nla_type=IFLA_INFO_DATA}, "\x08\x00\x01\x00\x00\x00\x00\x00\x06\x00\x02\x00\x00\x00\x00\x00\x06\x00\x03\x00\x00\x00\x00\x00\x08\x00\x04\x00\x00\x00\x00\x00"...]]], [{nla_len=20, nla_type=IFLA_PERM_ADDRESS}, 06:d1:90:f8:48:fb:00], [{nla_len=8, nla_type=IFLA_LINK}, 0], ...]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3280
+[pid  5173] recvfrom(9,  <unfinished ...>
+[pid  5174] recvmsg(16,  <unfinished ...>
+[pid  5173] <... recvfrom resumed>0xffff7c003d28, 8192, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5174] <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=1468, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth0"), ifi_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST|IFF_LOWER_UP, ifi_change=0}, [[{nla_len=9, nla_type=IFLA_IFNAME}, "eth0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 0], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 6], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 65535], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65535], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=0x3d /* IFLA_??? */}, "\x00\x00\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 10], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=0x3a /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3f /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x40 /* IFLA_??? */}, "\x00\x00\x01\x00"], [{nla_len=8, nla_type=0x3b /* IFLA_??? */}, "\xf8\xff\x07\x00"], [{nla_len=8, nla_type=0x3c /* IFLA_??? */}, "\xff\xff\x00\x00"], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 10], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 2], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 1], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=10, nla_type=IFLA_ADDRESS}, 02:42:ac:11:00:03], [{nla_len=10, nla_type=IFLA_BROADCAST}, ff:ff:ff:ff:ff:ff], [{nla_len=204, nla_type=IFLA_STATS64}, {rx_packets=3354, tx_packets=1753, rx_bytes=51454683, tx_bytes=150138, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=3354, tx_packets=1753, rx_bytes=51454683, tx_bytes=150138, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=16, nla_type=IFLA_LINKINFO}, [{nla_len=9, nla_type=IFLA_INFO_KIND}, "veth"]], [{nla_len=8, nla_type=IFLA_LINK_NETNSID}, 0], [{nla_len=8, nla_type=IFLA_LINK}, 20], ...]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 1468
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5174] recvmsg(16,  <unfinished ...>
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080379952, u64=281472762123312}}], 256, 29987, NULL, 8) = 1
+[pid  5174] <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222075, nlmsg_pid=5174}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+[pid  5173] sendto(9, "\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, 0 <unfinished ...>
+[pid  5174] sendto(16, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1741222076, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+[pid  5173] <... sendto resumed>)       = 53
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080381392, u64=281472762124752}}], 256, 29985, NULL, 8) = 1
+[pid  5174] <... sendto resumed>)       = 20
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5174] recvmsg(16,  <unfinished ...>
+[pid  5155] recvfrom(11,  <unfinished ...>
+[pid  5174] <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222076, nlmsg_pid=5174}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=14484, tstamp=14484}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222076, nlmsg_pid=5174}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.17.0.3")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.17.0.3")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.17.255.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=14490, tstamp=14490}]]], [{nlmsg_len=80, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222076, nlmsg_pid=5174}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=14484, tstamp=14484}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=5, nla_type=0xb /* IFA_??? */}, "\x01"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 244
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080379952, u64=281472762123312}}], 256, 29986, NULL, 8) = 1
+[pid  5174] recvmsg(16,  <unfinished ...>
+[pid  5155] <... recvfrom resumed>"\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, NULL) = 53
+[pid  5174] <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741222076, nlmsg_pid=5174}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+[pid  5173] sendto(9, "\4&\5READY\vSocket-Type\0\0\0\3REQ\10Iden"..., 40, 0, NULL, 0 <unfinished ...>
+[pid  5174] close(16 <unfinished ...>
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=2080381392, u64=281472762124752}} <unfinished ...>
+[pid  5174] <... close resumed>)        = 0
+[pid  5173] <... sendto resumed>)       = 40
+[pid  5174] socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP <unfinished ...>
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5174] <... socket resumed>)       = 16
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5174] setsockopt(16, SOL_SOCKET, SO_REUSEADDR, [1], 4 <unfinished ...>
+[pid  5155] recvfrom(11,  <unfinished ...>
+[pid  5174] <... setsockopt resumed>)   = 0
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080379952, u64=281472762123312}}], 256, 29984, NULL, 8) = 1
+[pid  5174] bind(16, {sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
+[pid  5155] <... recvfrom resumed>"\4&\5READY\vSocket-Type\0\0\0\3REQ\10Iden"..., 8192, 0, NULL, NULL) = 40
+[pid  5174] <... bind resumed>)         = 0
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5174] listen(16, 100 <unfinished ...>
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5174] <... listen resumed>)       = 0
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5174] getsockname(16,  <unfinished ...>
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080381392, u64=281472762124752}}], 256, 29979, NULL, 8) = 1
+[pid  5174] <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5174] getsockname(16,  <unfinished ...>
+[pid  5155] getpid( <unfinished ...>
+[pid  5174] <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5174] getpid( <unfinished ...>
+[pid  5155] write(9, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5155] <... write resumed>)        = 8
+[pid  5153] <... ppoll resumed>)        = 1 ([{fd=9, revents=POLLIN}])
+[pid  5174] write(13, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5155] futex(0xffff846277a4, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664149216, u64=187650785311456}}], 256, -1, NULL, 8) = 1
+[pid  5174] <... write resumed>)        = 8
+[pid  5155] <... futex resumed>)        = 0
+[pid  5176] getpid( <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5155] futex(0xffff846277b0, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+[pid  5176] ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5174] write(15, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5153] read(9,  <unfinished ...>
+[pid  5176] <... ppoll resumed>)        = 1 ([{fd=13, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5174] <... write resumed>)        = 8
+[pid  5155] <... futex resumed>)        = 0
+[pid  5176] getpid( <unfinished ...>
+[pid  5174] write(1, "Compute Node 2 started, listenin"..., 58 <unfinished ...>
+[pid  5153] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5174] <... write resumed>)        = 58
+[pid  5155] sendto(11, "\4\31\5READY\vSocket-Type\0\0\0\3REP", 27, 0, NULL, 0 <unfinished ...>
+[pid  5176] read(13,  <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5176] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080379952, u64=281472762123312}}], 256, 29983, NULL, 8) = 1
+[pid  5155] <... sendto resumed>)       = 27
+[pid  5176] epoll_ctl(14, EPOLL_CTL_ADD, 16, {events=0, data={u32=2080380736, u64=281472762124096}} <unfinished ...>
+[pid  5174] ppoll([{fd=15, events=POLLIN}], 1, NULL, NULL, 0 <unfinished ...>
+[pid  5173] recvfrom(9,  <unfinished ...>
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5174] <... ppoll resumed>)        = 1 ([{fd=15, revents=POLLIN}])
+[pid  5173] <... recvfrom resumed>"\4\31\5READY\vSocket-Type\0\0\0\3REP", 8192, 0, NULL, NULL) = 27
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 16, {events=EPOLLIN, data={u32=2080380736, u64=281472762124096}} <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5153] write(7, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080381392, u64=281472762124752}}], 256, -1, NULL, 8) = 1
+[pid  5176] getpid( <unfinished ...>
+[pid  5174] read(15,  <unfinished ...>
+[pid  5173] getpid( <unfinished ...>
+[pid  5153] <... write resumed>)        = 8
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5174] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=2080381392, u64=281472762124752}} <unfinished ...>
+[pid  5176] ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5173] write(8, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5176] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] <... write resumed>)        = 8
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5174] ppoll([{fd=15, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5173] sendto(9, "\1\0\0\5ping\0", 9, 0, NULL, 0 <unfinished ...>
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5174] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5173] <... sendto resumed>)       = 9
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080379952, u64=281472762123312}}], 256, -1, NULL, 8) = 1
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080381392, u64=281472762124752}}, {events=EPOLLIN, data={u32=3664093488, u64=187650785255728}}], 256, -1, NULL, 8) = 2
+[pid  5174] ppoll([{fd=15, events=POLLIN}], 1, NULL, NULL, 0 <unfinished ...>
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=2080379952, u64=281472762123312}} <unfinished ...>
+[pid  5153] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5155] recvfrom(11,  <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... recvfrom resumed>"\1\0\0\5ping\0", 8192, 0, NULL, NULL) = 9
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] getpid( <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, NULL, NULL, 0 <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5155] write(9, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5153] <... ppoll resumed>)        = 1 ([{fd=9, revents=POLLIN}])
+[pid  5155] getpid( <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] ppoll([{fd=7, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5153] read(9,  <unfinished ...>
+[pid  5155] <... ppoll resumed>)        = 1 ([{fd=7, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5153] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5155] getpid( <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] read(7,  <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5155] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5153] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5155] getpid( <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] ppoll([{fd=7, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5153] write(7, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5155] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5153] <... write resumed>)        = 8
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664093488, u64=187650785255728}}], 256, -1, NULL, 8) = 1
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] getpid( <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5153] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5155] ppoll([{fd=7, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... ppoll resumed>)        = 1 ([{fd=7, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] getpid( <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, NULL, NULL, 0 <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5155] read(7, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=2080381392, u64=281472762124752}}) = 0
+[pid  5155] getpid()                    = 5153
+[pid  5155] write(9, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5153] <... ppoll resumed>)        = 1 ([{fd=9, revents=POLLIN}])
+[pid  5155] sendto(11, "\1\0\0\5pong\0", 9, 0, NULL, 0 <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080379952, u64=281472762123312}}], 256, -1, NULL, 8) = 1
+[pid  5155] <... sendto resumed>)       = 9
+[pid  5173] recvfrom(9,  <unfinished ...>
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5173] <... recvfrom resumed>"\1\0\0\5pong\0", 8192, 0, NULL, NULL) = 9
+[pid  5155] getpid( <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5153] read(9,  <unfinished ...>
+[pid  5155] <... getpid resumed>)       = 5153
+[pid  5153] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5155] ppoll([{fd=7, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5155] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080381392, u64=281472762124752}}], 256, -1, NULL, 8) = 1
+[pid  5153] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5155] epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=2080381392, u64=281472762124752}} <unfinished ...>
+[pid  5153] getpid( <unfinished ...>
+[pid  5155] <... epoll_ctl resumed>)    = 0
+[pid  5153] <... getpid resumed>)       = 5153
+[pid  5155] epoll_pwait(8,  <unfinished ...>
+[pid  5153] ppoll([{fd=9, events=POLLIN}], 1, NULL, NULL, 0 <unfinished ...>
+[pid  5151] <... clock_nanosleep resumed>0xffffe4f67958) = 0
+[pid  5151] eventfd2(0, EFD_CLOEXEC)    = 10
+[pid  5151] fcntl(10, F_GETFL)          = 0x2 (flags O_RDWR)
+[pid  5151] fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+[pid  5151] fcntl(10, F_GETFL)          = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5151] fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+[pid  5151] getpid()                    = 5151
+[pid  5151] getpid()                    = 5151
+[pid  5151] ppoll([{fd=10, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0) = 0 (Timeout)
+[pid  5151] getpid()                    = 5151
+[pid  5151] write(6, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664090192, u64=187650785252432}}], 256, -1, NULL, 8) = 1
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] getpid( <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5151] write(10, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5173] ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5151] <... write resumed>)        = 8
+[pid  5173] <... ppoll resumed>)        = 1 ([{fd=6, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5151] write(1, "Ok: 5174\n", 9 <unfinished ...>
+[pid  5173] getpid( <unfinished ...>
+[pid  5151] <... write resumed>)        = 9
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] read(6,  <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5151] ppoll([{fd=8, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5173] socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP <unfinished ...>
+[pid  5151] <... ppoll resumed>)        = 1 ([{fd=8, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5173] <... socket resumed>)       = 11
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] fcntl(11, F_GETFL <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5151] read(8,  <unfinished ...>
+[pid  5173] fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5151] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5173] <... fcntl resumed>)        = 0
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] connect(11, {sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... connect resumed>)      = -1 EINPROGRESS (Operation now in progress)
+[pid  5151] ppoll([{fd=8, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080380736, u64=281472762124096}}], 256, -1, NULL, 8) = 1
+[pid  5151] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5173] epoll_ctl(7, EPOLL_CTL_ADD, 11, {events=0, data={u32=2080380032, u64=281472762123392}} <unfinished ...>
+[pid  5151] write(1, "Ok: 1 // \321\203\320\267\320\265\320\273 1 \320\264\320\276\321\201\321\202\321\203\320\277"..., 37 <unfinished ...>
+[pid  5176] accept4(16,  <unfinished ...>
+[pid  5151] <... write resumed>)        = 37
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5151] pselect6(1, [0], NULL, NULL, {tv_sec=0, tv_nsec=0}, NULL <unfinished ...>
+[pid  5176] <... accept4 resumed>{sa_family=AF_INET, sin_port=htons(58444), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC) = 17
+[pid  5151] <... pselect6 resumed>)     = 1 (in [0], left {tv_sec=0, tv_nsec=0})
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLOUT, data={u32=2080380032, u64=281472762123392}} <unfinished ...>
+[pid  5151] write(1, "Received command: ping 2\n", 25 <unfinished ...>
+[pid  5176] setsockopt(17, SOL_TCP, TCP_NODELAY, [1], 4 <unfinished ...>
+[pid  5151] <... write resumed>)        = 25
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5151] getpid( <unfinished ...>
+[pid  5176] <... setsockopt resumed>)   = 0
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] getpid( <unfinished ...>
+[pid  5151] ppoll([{fd=10, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5176] getsockname(17,  <unfinished ...>
+[pid  5151] <... ppoll resumed>)        = 1 ([{fd=10, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5151] getpid( <unfinished ...>
+[pid  5176] <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5173] ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5176] getpeername(17,  <unfinished ...>
+[pid  5151] read(10,  <unfinished ...>
+[pid  5173] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5151] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5176] <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(58444), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5176] getpeername(17,  <unfinished ...>
+[pid  5151] ppoll([{fd=10, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080380032, u64=281472762123392}}], 256, -1, NULL, 8) = 1
+[pid  5151] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5176] <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(58444), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] epoll_ctl(7, EPOLL_CTL_DEL, 11, 0xffff7c001488 <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5176] fcntl(17, F_GETFL <unfinished ...>
+[pid  5151] ppoll([{fd=10, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5151] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5176] <... fcntl resumed>)        = 0x2 (flags O_RDWR)
+[pid  5151] pselect6(1, [0], NULL, NULL, {tv_sec=0, tv_nsec=0}, NULL <unfinished ...>
+[pid  5173] getsockopt(11, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+[pid  5151] <... pselect6 resumed>)     = 1 (in [0], left {tv_sec=0, tv_nsec=0})
+[pid  5176] fcntl(17, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5151] write(1, "Received command: exec 2 2 10 20"..., 33 <unfinished ...>
+[pid  5173] <... getsockopt resumed>[0], [4]) = 0
+[pid  5151] <... write resumed>)        = 33
+[pid  5176] <... fcntl resumed>)        = 0
+[pid  5151] write(1, "Error:2: Node is unavailable\n", 29 <unfinished ...>
+[pid  5173] setsockopt(11, SOL_TCP, TCP_NODELAY, [1], 4 <unfinished ...>
+[pid  5151] <... write resumed>)        = 29
+[pid  5176] getpid( <unfinished ...>
+[pid  5151] getpid( <unfinished ...>
+[pid  5173] <... setsockopt resumed>)   = 0
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5151] ppoll([{fd=10, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5173] getsockname(11,  <unfinished ...>
+[pid  5151] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5176] write(13, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5151] pselect6(1, [0], NULL, NULL, {tv_sec=0, tv_nsec=0}, NULL <unfinished ...>
+[pid  5173] <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(58444), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5151] <... pselect6 resumed>)     = 1 (in [0], left {tv_sec=0, tv_nsec=0})
+[pid  5176] <... write resumed>)        = 8
+[pid  5151] read(0,  <unfinished ...>
+[pid  5173] getpeername(11,  <unfinished ...>
+[pid  5151] <... read resumed>"", 4096) = 0
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5151] write(1, "Received command: ping 99\n", 26 <unfinished ...>
+[pid  5173] <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+[pid  5151] <... write resumed>)        = 26
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664149216, u64=187650785311456}}], 256, -1, NULL, 8) = 1
+[pid  5151] write(1, "Error: Not found\n", 17 <unfinished ...>
+[pid  5173] fcntl(11, F_GETFL <unfinished ...>
+[pid  5151] <... write resumed>)        = 17
+[pid  5176] getpid( <unfinished ...>
+[pid  5173] <... fcntl resumed>)        = 0x802 (flags O_RDWR|O_NONBLOCK)
+[pid  5151] getpid( <unfinished ...>
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+[pid  5151] ppoll([{fd=10, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5176] ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5151] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5173] <... fcntl resumed>)        = 0
+[pid  5151] pselect6(1, [0], NULL, NULL, {tv_sec=0, tv_nsec=0}, NULL <unfinished ...>
+[pid  5176] <... ppoll resumed>)        = 1 ([{fd=13, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5151] <... pselect6 resumed>)     = 1 (in [0], left {tv_sec=0, tv_nsec=0})
+[pid  5173] getpid( <unfinished ...>
+[pid  5151] write(1, "Exiting on EOF.\n", 16 <unfinished ...>
+[pid  5176] getpid( <unfinished ...>
+[pid  5151] <... write resumed>)        = 16
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5151] getpid( <unfinished ...>
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] write(6, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5151] getpid( <unfinished ...>
+[pid  5176] read(13,  <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... write resumed>)        = 8
+[pid  5151] write(8, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5176] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5151] <... write resumed>)        = 8
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5151] getpid( <unfinished ...>
+[pid  5176] epoll_ctl(14, EPOLL_CTL_ADD, 17, {events=0, data={u32=2080384416, u64=281472762127776}} <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664090192, u64=187650785252432}}], 256, -1, NULL, 8) = 1
+[pid  5151] write(10, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5151] <... write resumed>)        = 8
+[pid  5173] getpid( <unfinished ...>
+[pid  5151] getpid( <unfinished ...>
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=2080384416, u64=281472762127776}} <unfinished ...>
+[pid  5151] <... getpid resumed>)       = 5151
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5151] ppoll([{fd=3, events=POLLIN}], 1, NULL, NULL, 0 <unfinished ...>
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5173] ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN|EPOLLOUT, data={u32=2080384416, u64=281472762127776}} <unfinished ...>
+[pid  5173] <... ppoll resumed>)        = 1 ([{fd=6, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5173] getpid( <unfinished ...>
+[pid  5176] recvfrom(17,  <unfinished ...>
+[pid  5173] <... getpid resumed>)       = 5151
+[pid  5176] <... recvfrom resumed>0xffff7c001ed8, 12, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5173] read(6,  <unfinished ...>
+[pid  5176] getpid( <unfinished ...>
+[pid  5173] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5173] epoll_ctl(7, EPOLL_CTL_ADD, 11, {events=0, data={u32=2080380032, u64=281472762123392}} <unfinished ...>
+[pid  5176] ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5176] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=2080380032, u64=281472762123392}} <unfinished ...>
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080384416, u64=281472762127776}}], 256, 29999, NULL, 8) = 1
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=2080380032, u64=281472762123392}} <unfinished ...>
+[pid  5176] sendto(17, "\377\0\0\0\0\0\0\0\1\177", 10, 0, NULL, 0 <unfinished ...>
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5176] <... sendto resumed>)       = 10
+[pid  5173] recvfrom(11,  <unfinished ...>
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=2080384416, u64=281472762127776}} <unfinished ...>
+[pid  5173] <... recvfrom resumed>"\377\0\0\0\0\0\0\0\1\177", 12, 0, NULL, NULL) = 10
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5173] recvfrom(11,  <unfinished ...>
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5173] <... recvfrom resumed>0xffff7c0096e2, 2, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5173] getpid()                    = 5151
+[pid  5173] ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0) = 0 (Timeout)
+[pid  5173] epoll_pwait(7, [{events=EPOLLOUT, data={u32=2080380032, u64=281472762123392}}], 256, 29998, NULL, 8) = 1
+[pid  5173] sendto(11, "\377\0\0\0\0\0\0\0\1\177\3", 11, 0, NULL, 0 <unfinished ...>
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080384416, u64=281472762127776}}], 256, 29998, NULL, 8) = 1
+[pid  5173] <... sendto resumed>)       = 11
+[pid  5176] recvfrom(17,  <unfinished ...>
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=2080380032, u64=281472762123392}} <unfinished ...>
+[pid  5176] <... recvfrom resumed>"\377\0\0\0\0\0\0\0\1\177\3", 12, 0, NULL, NULL) = 11
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN|EPOLLOUT, data={u32=2080384416, u64=281472762127776}} <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5176] recvfrom(17, 0xffff7c001ee3, 53, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5176] epoll_pwait(14, [{events=EPOLLOUT, data={u32=2080384416, u64=281472762127776}}], 256, 29995, NULL, 8) = 1
+[pid  5176] sendto(17, "\3\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 54, 0, NULL, 0) = 54
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080380032, u64=281472762123392}}], 256, 29997, NULL, 8) = 1
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=2080384416, u64=281472762127776}} <unfinished ...>
+[pid  5173] recvfrom(11,  <unfinished ...>
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5173] <... recvfrom resumed>"\3\1", 2, 0, NULL, NULL) = 2
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=2080380032, u64=281472762123392}}) = 0
+[pid  5173] recvfrom(11, "NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 52, 0, NULL, NULL) = 52
+[pid  5173] recvfrom(11, 0xffff7c00bc48, 8192, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5173] epoll_pwait(7, [{events=EPOLLOUT, data={u32=2080380032, u64=281472762123392}}], 256, 29995, NULL, 8) = 1
+[pid  5173] sendto(11, "\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, 0 <unfinished ...>
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080384416, u64=281472762127776}}], 256, 29995, NULL, 8) = 1
+[pid  5173] <... sendto resumed>)       = 53
+[pid  5176] recvfrom(17,  <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5176] <... recvfrom resumed>"\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, NULL) = 53
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080380032, u64=281472762123392}}], 256, 29995, NULL, 8) = 1
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN|EPOLLOUT, data={u32=2080384416, u64=281472762127776}} <unfinished ...>
+[pid  5173] sendto(11, "\4&\5READY\vSocket-Type\0\0\0\3REQ\10Iden"..., 40, 0, NULL, 0 <unfinished ...>
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5173] <... sendto resumed>)       = 40
+[pid  5176] recvfrom(17,  <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5176] <... recvfrom resumed>"\4&\5READY\vSocket-Type\0\0\0\3REQ\10Iden"..., 8192, 0, NULL, NULL) = 40
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080380032, u64=281472762123392}}], 256, 29994, NULL, 8) = 1
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=2080380032, u64=281472762123392}} <unfinished ...>
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080384416, u64=281472762127776}}], 256, 29993, NULL, 8) = 1
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5176] getpid( <unfinished ...>
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5176] write(15, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5174] <... ppoll resumed>)        = 1 ([{fd=15, revents=POLLIN}])
+[pid  5176] sendto(17, "\4\31\5READY\vSocket-Type\0\0\0\3REP", 27, 0, NULL, 0 <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5176] <... sendto resumed>)       = 27
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080380032, u64=281472762123392}}], 256, 29993, NULL, 8) = 1
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080384416, u64=281472762127776}}], 256, -1, NULL, 8) = 1
+[pid  5173] recvfrom(11,  <unfinished ...>
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=2080384416, u64=281472762127776}} <unfinished ...>
+[pid  5174] read(15,  <unfinished ...>
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5173] <... recvfrom resumed>"\4\31\5READY\vSocket-Type\0\0\0\3REP", 8192, 0, NULL, NULL) = 27
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5174] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=2080380032, u64=281472762123392}} <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5173] sendto(11, "\1\0\0\5ping\0", 9, 0, NULL, 0 <unfinished ...>
+[pid  5174] write(13, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080384416, u64=281472762127776}}], 256, -1, NULL, 8) = 1
+[pid  5173] <... sendto resumed>)       = 9
+[pid  5176] recvfrom(17,  <unfinished ...>
+[pid  5174] <... write resumed>)        = 8
+[pid  5176] <... recvfrom resumed>"\1\0\0\5ping\0", 8192, 0, NULL, NULL) = 9
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664149216, u64=187650785311456}}], 256, -1, NULL, 8) = 1
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080380032, u64=281472762123392}}], 256, -1, NULL, 8) = 1
+[pid  5176] getpid( <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5173] epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=2080380032, u64=281472762123392}} <unfinished ...>
+[pid  5176] ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5174] ppoll([{fd=15, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5176] <... ppoll resumed>)        = 1 ([{fd=13, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5173] <... epoll_ctl resumed>)    = 0
+[pid  5176] getpid( <unfinished ...>
+[pid  5174] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5176] read(13,  <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5176] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5176] getpid( <unfinished ...>
+[pid  5174] ppoll([{fd=15, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5174] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5176] ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5176] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5174] write(13, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3664149216, u64=187650785311456}}], 256, -1, NULL, 8) = 1
+[pid  5174] <... write resumed>)        = 8
+[pid  5176] getpid( <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5176] ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5174] ppoll([{fd=15, events=POLLIN}], 1, NULL, NULL, 0 <unfinished ...>
+[pid  5176] <... ppoll resumed>)        = 1 ([{fd=13, revents=POLLIN}], left {tv_sec=0, tv_nsec=0})
+[pid  5176] getpid()                    = 5174
+[pid  5176] read(13, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN|EPOLLOUT, data={u32=2080384416, u64=281472762127776}}) = 0
+[pid  5176] getpid()                    = 5174
+[pid  5176] write(15, "\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5174] <... ppoll resumed>)        = 1 ([{fd=15, revents=POLLIN}])
+[pid  5176] sendto(17, "\1\0\0\5pong\0", 9, 0, NULL, 0 <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5176] <... sendto resumed>)       = 9
+[pid  5173] <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2080380032, u64=281472762123392}}], 256, -1, NULL, 8) = 1
+[pid  5176] getpid( <unfinished ...>
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5176] <... getpid resumed>)       = 5174
+[pid  5173] recvfrom(11,  <unfinished ...>
+[pid  5176] ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0 <unfinished ...>
+[pid  5174] read(15,  <unfinished ...>
+[pid  5176] <... ppoll resumed>)        = 0 (Timeout)
+[pid  5173] <... recvfrom resumed>"\1\0\0\5pong\0", 8192, 0, NULL, NULL) = 9
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5174] <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+[pid  5176] <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2080384416, u64=281472762127776}}], 256, -1, NULL, 8) = 1
+[pid  5173] epoll_pwait(7,  <unfinished ...>
+[pid  5176] epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=2080384416, u64=281472762127776}} <unfinished ...>
+[pid  5174] getpid( <unfinished ...>
+[pid  5176] <... epoll_ctl resumed>)    = 0
+[pid  5174] <... getpid resumed>)       = 5174
+[pid  5176] epoll_pwait(14,  <unfinished ...>
+[pid  5174] ppoll([{fd=15, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 0) = 0 (Timeout)
+[pid  5174] getpid()                    = 5174
+[pid  5174] ppoll([{fd=15, events=POLLIN}], 1, NULL, NULL, 0) = ? ERESTARTNOHAND (To be restarted if no handler)
+strace: Process 5151 detached
+strace: Process 5153 detached
+strace: Process 5154 detached
+strace: Process 5155 detached
+strace: Process 5172 detached
+strace: Process 5173 detached
+strace: Process 5174 detached
+strace: Process 5175 detached
+strace: Process 5176 detached
